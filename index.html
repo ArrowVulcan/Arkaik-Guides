@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arkaik Fansite | Home</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+    <div id="content">
+
+        <div id="navbar">
+
+            <div id="nav-jobchange" class="nav-button">
+
+                <p>Job Change</p>
+
+                <div class="nav-select">
+
+                    <table>
+                        <tr>
+                            <th>First Class</th>
+                            <th>Second Class (2-1)</th>
+                            <th>Second Class (2-2)</th>
+                          </tr>
+                        <tr>
+                            <td onclick="change_job('Swordsman')">Swordsman</td>
+                            <td onclick="change_job('Knight')">Knight</td>
+                            <td class="crossed">Crusader</td>
+                        </tr>
+                        <tr>
+                            <td class="crossed">Magician</td>
+                            <td class="crossed">Wizard</td>
+                            <td class="crossed">Sage</td>
+                        </tr>
+                        <tr>
+                            <td class="crossed">Archer</td>
+                            <td class="crossed">Hunter</td>
+                            <td class="crossed">Bard/Dancer</td>
+                        </tr>
+                        <tr>
+                            <td class="crossed">Merchant</td>
+                            <td class="crossed">Blacksmith</td>
+                            <td class="crossed">Alchemist</td>
+                        </tr>
+                        <tr>
+                            <td class="crossed">Thief</td>
+                            <td class="crossed">Assassin</td>
+                            <td class="crossed">Rogue</td>
+                        </tr>
+                        <tr>
+                            <td class="crossed">Acolyte</td>
+                            <td class="crossed">Priest</td>
+                            <td class="crossed">Monk</td>
+                        </tr>
+                    </table>
+
+                </div>
+
+            </div>
+
+            <div id="nav-guide" class="nav-button">
+
+                <p>Guides</p>
+
+                <div class="nav-select">
+
+                    <table>
+                        <tr>
+                            <td onclick="guide('mining_guide')">Blacksmith Mining/Refinement/Crafting</td>
+                        </tr>
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="main-wrapper">
+
+            <div id="logo-wrapper">
+                <img src="./images/logo.png" alt="logo">
+            </div>
+
+            <div id="main-intro-wrapper">
+                <p>Welcome to this fansite for the game Arkaik: Tales of Sarina!</p>
+                <p>Here you will find guides for all kinds of stuff related to the game.</p>
+            </div>
+
+        </div>
+
+        <div id="quest-wrapper">
+
+            <h1 id="job-title">Knight Job Change</h1>
+
+            <div id="map-title">
+                <h2></h2>
+            </div>
+
+            <div id="map-wrapper">
+
+                <div id="map-arrow-left" onmousedown="arrow_left()">
+                    <img src="./images/arrow.png" alt="arrow">
+                </div>
+
+                <div id="map">
+                    <img id="map-image">
+                    <div id="circle"></div>
+                </div>
+
+                <div id="map-arrow-right" onmousedown="arrow_right()">
+                    <img src="./images/arrow.png" alt="arrow">
+                </div>
+
+            </div>
+
+            <div id="steps"></div>
+
+            <div id="description-wrapper">
+
+                <p id="map-description"></p>
+
+            </div>
+
+        </div>
+
+        <div id="blacksmith-mining-wrapper">
+
+            <div id="blacksmith-intro-wrapper">
+
+                <h1 id="blacksmith-mining-guide-title">Blacksmith Mining/Refinement/Crafting Guide</h1>
+
+                <h2 id="blacksmith-refinement-title">Mining</h2>
+
+                <p>The Blacksmith job have two different skill points. One is the normal and the other is for mining.</p>
+                <p>All mining skills have a tiny icon <span class="mini-icon"><img src="./images/mining_icon.jpg" alt="mining"></span> at the bottom right corner.</p>
+                
+                <div class="skill-info">
+                    <img src="./images/skills/skill_mining.jpg" alt="skill_mining">
+                    <p>To be able to start mining, you will need to spend a normal skill point in <span class='skill'>[Mining]</span></p>
+                </div>
+
+                <p>You will start with 2 <span class='item'>[Drill]</span> and you need to craft more as they break after a certain uses.</p>
+                
+                <div class="skill-info">
+                    <img src="./images/skills/skill_gurren_drill.jpg" alt="gurren_drill">
+                    <p>Best way to start off is to level up <span class='skill'>[Gurren Drill]</span> to make sure that the crafting success rate is 100% (unless you like to gamble..)</p>
+                </div>
+
+                <p>To craft a <span class='item'>[Drill]</span>, you will need 2 <span class='item'>[Steel]</span>. Easiest to farm and level mining is in Abandoned Mine of Mjolnir and Zero (F3).</p>
+                <p>Kill <span class='monster'>[Skeleton Worker]</span> and they will drop <span class='item'>[Steel]</span> every time.</p>
+                <br>
+
+                <div id="map">
+                    <img id="map-image" src="images/minimap/zero_field.jpg" alt="zero_field">
+                    <div id="circle" style="display: block; left: 279px; top: 42px;"></div>
+                    <p>You can access Zero Florest from the north portal in Zero city.</p>
+                </div>
+                <br>
+
+                <div class="skill-info">
+                    <img src="./images/skills/skill_bey_drill.jpg" alt="bey_drill">
+                    <p>After you have leveled up <span class='skill'>[Gurren Drill]</span> to 10, I'd recommend leveling <span class='skill'>[Bey-Drill]</span>.</p>
+                </div>
+
+                <p><span class='skill'>[Bey-Drill]</span> let you mine faster which will make you level up in mining faster.</p>
+                
+                <div class="skill-info">
+                    <img src="./images/skills/skill_go_drill.jpg" alt="go_drill">
+                    <p><span class='skill'>[Go Drill]</span> is a nice next choise and if you find two ores next to each other, you can run back and forth to re-trigger the skill.</p>
+                </div>
+
+                <div class="skill-info">
+                    <img src="./images/skills/skill_minegan.jpg" alt="minegan">
+                    <p>Do NOT level <span class='skill'>[Minegan]</span> as it's almost useless (and doesn't even work..)</p>
+                </div>
+                
+                <div class="skill-info">
+                    <img src="./images/skills/skill_pocket_drill.jpg" alt="pocket_drill">
+                    <p><span class='skill'>[Pocket Drill]</span> is not needed as you can have atleast 20+ <span class='item'>[Drill]</span> on you and crafting new is easy.</p>
+                </div>
+
+                <div class="skill-info">
+                    <img src="./images/skills/skill_tengen_drill.jpg" alt="tengen_drill">
+                    <p><span class='skill'>[Tengen Drill]</span> is not the best as it's too easy to make <span class='item'>[Drill]</span>.</p>
+                </div>
+
+                <div class="skill-info">
+                    <img src="./images/skills/skill_reinforced_drill.jpg" alt="reinforced_drill">
+                    <p><span class='skill'>[Reinforced Drill]</span> is okey but is not really needed due to how easy <span class='item'>[Drill]</span> is to craft.</p>
+                </div>
+
+                <div class="skill-info">
+                    <img src="./images/skills/skill_mine_hue.jpg" alt="mine_hue">
+                    <p><span class='skill'>[Mine Hue]</span> helps you get that extra loot, can be nice to get.</p>
+                </div>
+                
+                <div class="skill-info">
+                    <img src="./images/skills/skill_mine_shield.jpg" alt="mine_shield">
+                    <p>I don't know anything about damage from "accidents" yet. Not sure if <span class='skill'>[Mine Shield]</span> is good or needed.</p>
+                </div>
+
+            </div>
+
+            <div id="blacksmith-refinement-wrapper">
+
+                <h2 id="blacksmith-refinement-title">Item Refinement</h2>
+
+                <div class="skill-info">
+                    <img src="./images/skills/skill_refining_scroll.jpg" alt="refining_scroll">
+                    <p>To start off, you will need 1 normal skill point in <span class='skill'>[Refining Scroll]</span>.</p>
+                </div>
+
+                <p><span class='item'>[Phracon]</span> is needed for <span class='item'>[Weapon Refinement Scroll Lv.1]</span></p>
+                <p>Easiest way to farm <span class='item'>[Phracon]</span> is from <span class='monster'>[Ant Egg]</span> in Infernal Anthill (T1).</p>
+                <br>
+                
+                <p><span class='item'>[Emveretarcon]</span> is needed for <span class='item'>[Weapon Refinement Scroll Lv.2]</span></p>
+                <p>Easiest way to farm <span class='item'>[Emveretarcon]</span> is from <span class='monster'>[Mineral]</span> in Mine Dungeon (F2). <span class='monster'>[Mineral]</span> also drops <span class='item'>[Oridecon]</span> and <span class='item'>[Gold]</span></p>
+                <br>
+
+                <p><span class='item'>[Oridecon]</span> is needed for <span class='item'>[Weapon Refinement Scroll Lv.3]</span></p>
+                <p>Easiest way to farm <span class='item'>[Oridecon]</span> is from <span class='monster'>[Mineral]</span> in Mine Dungeon (F2). <span class='monster'>[Mineral]</span> also drops <span class='item'>[Emveretarcon]</span> and <span class='item'>[Gold]</span></p>
+                <br>
+                
+                <p><span class='item'>[Gold]</span> is needed for <span class='item'>[Weapon Refinement Scroll Lv.4]</span></p>
+                <p>Easiest way to farm <span class='item'>[Gold]</span> is from <span class='monster'>[Mineral]</span> in Mine Dungeon (F2). <span class='monster'>[Mineral]</span> also drops <span class='item'>[Emveretarcon]</span> and <span class='item'>[Oridecon]</span></p>
+                <br>
+                
+                <p><span class='item'>[Elunium]</span> is needed for <span class='item'>[Equipment Refining Scroll]</span></p>
+                <p>Easiest way to farm <span class='item'>[Elunium]</span> is from <span class='monster'>[Obsidian]</span> and <span class='monster'>[Teddy Bear]</span> in Mine Dungeon (F2). <span class='monster'>[Obsidian]</span> also drops <span class='item'>[Steel]</span></p>
+                <br>
+
+                <p>Mine Dungeon (F2) is one of the better place to farm refining materials as the monster drops everything but <span class='item'>[Phracon]</span></p>
+                <br>
+
+                <div id="map">
+                    <img id="map-image" src="images/minimap/zero.jpg" alt="zero">
+                    <div id="circle" style="display: block; left: 406px; top: 181px;"></div>
+                    <p>Fastest way to Mine Dungeon is to use the train in Zero to Einbech.</p>
+                </div>
+                <br>
+
+                <div class="skill-info">
+                    <img src="./images/skills/skill_enchantedstone_craft.jpg" alt="enchantedstone_craft">
+                    <p><span class='item'>[Mini Furnace]</span> needed for <span class='skill'>[Enchantedstone Craft]</span> drops from <span class='monster'>[Old Stove]</span>.</p>
+                </div>
+
+            </div>
+
+            <div id="blacksmith-weapon-crafting-wrapper">
+
+                <h2 id="blacksmith-weapon-crafting-title">Weapon Crafting</h2>
+
+                <h3>Axes</h3>
+                <br>
+
+                <div class="crafting-wrapper">
+
+                    <h4>Axe [4]</h4>
+                    <p>30 <span class='item'>[Iron]</span></p>
+                    <br>
+
+                    <h4>Battle Axe [4]</h4>
+                    <p>140 <span class='item'>[Iron]</span></p>
+                    <br>
+
+                    <h4>Hammer [3]</h4>
+                    <p>45 <span class='item'>[Steel]</span></p>
+                    <br>
+
+                    <h4>Buster [2]</h4>
+                    <p>8 <span class='item'>[Oridecon]</p>
+                    <p>35 <span class='item'>[Steel]</span></p>
+                    <p>50 <span class='item'>[Orc's Fang]</span></p>
+                    <br>
+
+                    <h4>Two-Handed Axe [2]</h4>
+                    <p>16 <span class='item'>[Oridecon]</span></p>
+                    <p>20 <span class='item'>[Steel]</span></p>
+                    <p>1 <span class='item'>[Amethyst]</span></p>
+                    <br>
+
+                </div>
+
+                <h3>Daggers</h3>
+                <br>
+
+                <div class="crafting-wrapper">
+
+                    <h4>Main Gauche [4]</h4>
+                    <p>80 <span class='item'>[Iron]</span></p>
+                    <br>
+
+                    <h4>Hugel Knife [2]</h4>
+                    <p>40 <span class='item'>[Steel]</span></p>
+                    <br>
+
+                    <h4>Dagger [3]</h4>
+                    <p>60 <span class='item'>[Steel]</span></p>
+                    <br>
+
+                    <h4>Stiletto [3]</h4>
+                    <p>90 <span class='item'>[Steel]</span></p>
+                    <br>
+
+                    <h4>Gladius [3]</h4>
+                    <p>10 <span class='item'>[Oridecon]</span></p>
+                    <p>80 <span class='item'>[Steel]</span></p>
+                    <p>2 <span class='item'>[Sapphire]</span></p>
+                    <br>
+
+                    <h4>Damascus [2]</h4>
+                    <p>12 <span class='item'>[Oridecon]</span></p>
+                    <p>120 <span class='item'>[Steel]</span></p>
+                    <p>2 <span class='item'>[Zircon]</span></p>
+                    <br>
+
+                </div>
+
+                <h3>Knuckles</h3>
+                <br>
+
+                <div class="crafting-wrapper">
+
+                    <h4>Waghnak [4]</h4>
+                    <p>230 <span class='item'>[Iron]</span></p>
+                    <p>2 <span class='item'>[Pearl]</span></p>
+                    <br>
+
+                    <h4>Knuckle Dusters [3]</h4>
+                    <p>90 <span class='item'>[Steel]</span></p>
+                    <br>
+
+                    <h4>Studded Knuckles [3]</h4>
+                    <p>140 <span class='item'>[Steel]</span></p>
+                    <br>
+
+                    <h4>Fist [1]</h4>
+                    <p>8 <span class='item'>[Oridecon]</span></p>
+                    <p>17 <span class='item'>[Ruby]</span></p>
+                    <br>
+
+                    <h4>Finger [2]</h4>
+                    <p>10 <span class='item'>[Oridecon]</span></p>
+                    <p>22 <span class='item'>[Opal]</span></p>
+                    <br>
+
+                    <h4>Claw [2]</h4>
+                    <p>16 <span class='item'>[Oridecon]</span></p>
+                    <p>30 <span class='item'>[Topaz]</span></p>
+                    <br>
+
+                </div>
+
+                <h3>Mace</h3>
+                <br>
+
+                <div class="crafting-wrapper">
+
+                    <h4>Club [4]</h4>
+                    <p>5 <span class='item'>[Iron]</span></p>
+                    <br>
+
+                    <h4>Mace [4]</h4>
+                    <p>50 <span class='item'>[Iron]</span></p>
+                    <br>
+
+                    <h4>Smasher [3]</h4>
+                    <p>35 <span class='item'>[Steel]</span></p>
+                    <br>
+
+                    <h4>Flail [3]</h4>
+                    <p>60 <span class='item'>[Steel]</span></p>
+                    <br>
+
+                    <h4>Chain [3]</h4>
+                    <p>85 <span class='item'>[Steel]</span></p>
+                    <br>
+
+                    <h4>Morning Star [2]</h4>
+                    <p>130 <span class='item'>[Steel]</span></p>
+                    <p>2 <span class='item'>[1carat Diamond]</span></p>
+                    <br>
+
+                    <h4>Sword Mace [1]</h4>
+                    <p>160 <span class='item'>[Steel]</span></p>
+                    <p>35 <span class='item'>[Sharp Scale]</span></p>
+                    <br>
+
+                    <h4>Stunner [2]</h4>
+                    <p>200 <span class='item'>[Steel]</span></p>
+                    <p>2 <span class='item'>[Heroic Emblem]</span></p>
+                    <br>
+
+                </div>
+
+                <h3>Spear</h3>
+                <br>
+
+                <div class="crafting-wrapper">
+
+                    <h4>Ranseur [4]</h4>
+                    <p>50 <span class='item'>[Iron]</span></p>
+                    <br>
+
+                    <h4>Pike [4]</h4>
+                    <p>100 <span class='item'>[Iron]</span></p>
+                    <br>
+
+                    <h4>Guisarme [3]</h4>
+                    <p>50 <span class='item'>[Steel]</span></p>
+                    <br>
+
+                    <h4>Glaive [3]</h4>
+                    <p>85 <span class='item'>[Steel]</span></p>
+                    <br>
+
+                    <h4>Partizan [2]</h4>
+                    <p>105 <span class='item'>[Steel]</span></p>
+                    <br>
+
+                    <h4>Trident [3]</h4>
+                    <p>12 <span class='item'>[Oridecon]</span></p>
+                    <p>20 <span class='item'>[Steel]</span></p>
+                    <p>10 <span class='item'>[Aquamarine]</span></p>
+                    <br>
+
+                    <h4>Halberd [2]</h4>
+                    <p>22 <span class='item'>[Oridecon]</span></p>
+                    <p>30 <span class='item'>[Steel]</span></p>
+                    <br>
+
+                    <h4>Lance</h4>
+                    <p>22 <span class='item'>[Oridecon]</span></p>
+                    <p>6 <span class='item'>[Ruby]</span></p>
+                    <p>4 <span class='item'>[Evil Horn]</span></p>
+                    <br>
+
+                </div>
+
+                <h3>Sword (1 Hand)</h3>
+                <br>
+
+                <div class="crafting-wrapper">
+
+                    <h4>Blade [4]</h4>
+                    <p>80 <span class='item'>[Iron]</span></p>
+                    <p>50 <span class='item'>[Tooth of Bat]</span></p>
+                    <br>
+
+                    <h4>Rapier [3]</h4>
+                    <p>40 <span class='item'>[Steel]</span></p>
+                    <br>
+
+                    <h4>Schimitar [3]</h4>
+                    <p>70 <span class='item'>[Steel]</span></p>
+                    <br>
+
+                    <h4>Ring Pommel Saber [3]</h4>
+                    <p>80 <span class='item'>[Steel]</span></p>
+                    <p>100 <span class='item'>[Wolf Claw]</span></p>
+                    <br>
+
+                    <h4>Saber [3]</h4>
+                    <p>14 <span class='item'>[Oridecon]</span></p>
+                    <p>10 <span class='item'>[Steel]</span></p>
+                    <p>2 <span class='item'>[Opal]</span></p>
+                    <br>
+
+                    <h4>Haedonggum [2]</h4>
+                    <p>16 <span class='item'>[Oridecon]</span></p>
+                    <p>20 <span class='item'>[Steel]</span></p>
+                    <p>2 <span class='item'>[Topaz]</span></p>
+                    <br>
+
+                    <h4>Tsurugi [2]</h4>
+                    <p>17 <span class='item'>[Oridecon]</span></p>
+                    <p>30 <span class='item'>[Steel]</span></p>
+                    <p>2 <span class='item'>[Garnet]</span></p>
+                    <br>
+
+                    <h4>Flamberge [2]</h4>
+                    <p>32 <span class='item'>[Oridecon]</span></p>
+                    <p>2 <span class='item'>[Cursed Ruby]</span></p>
+                    <br>
+
+                </div>
+
+                <h3>Sword (2 Hand)</h3>
+                <br>
+
+                <div class="crafting-wrapper">
+
+                    <h4>Katana [4]</h4>
+                    <p>50 <span class='item'>[Iron]</span></p>
+                    <p>27 <span class='item'>[Horrendous Mouth]</span></p>
+                    <br>
+
+                    <h4>Slayer [3]</h4>
+                    <p>50 <span class='item'>[Steel]</span></p>
+                    <p>35 <span class='item'>[Decayed Nail]</span></p>
+                    <br>
+
+                    <h4>Two-Handed Sword [2]</h4>
+                    <p>22 <span class='item'>[Oridecon]</span></p>
+                    <p>20 <span class='item'>[Steel]</span></p>
+                    <br>
+
+                    <h4>Broad Sword [2]</h4>
+                    <p>25 <span class='item'>[Oridecon]</span></p>
+                    <p>40 <span class='item'>[Steel]</span></p>
+                    <br>
+
+                    <h4>Claymore [2]</h4>
+                    <p>40 <span class='item'>[Oridecon]</span></p>
+                    <p>40 <span class='item'>[Steel]</span></p>
+                    <p>2 <span class='item'>[1carat Diamond]</span></p>
+                    <br>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="scripts/index.js"></script>
+
+    <script>
+
+        let step = 0
+
+        let class_quest = swordsman_quest
+
+        let max_steps = class_quest.length - 1
+
+        let main_wrapper = document.getElementById("main-wrapper")
+        let quest_wrapper = document.getElementById("quest-wrapper")
+        let blacksmith_mining_wrapper = document.getElementById("blacksmith-mining-wrapper")
+        let title = document.getElementById("map-title")
+        let job_title = document.getElementById("job-title")
+        let map = document.getElementById("map-image")
+        let circle = document.getElementById("circle")
+        let desc = document.getElementById("map-description")
+        let steps = document.getElementById("steps")
+        
+        let map_arrow_left = document.getElementById("map-arrow-left")
+        let map_arrow_right = document.getElementById("map-arrow-right")
+
+        function update_arrows(){
+
+            if(step < max_steps){
+                map_arrow_right.style.visibility = "visible"
+            }
+
+            if(step <= 0){
+                map_arrow_left.style.visibility = "hidden"
+            }
+
+            if(step >= max_steps){
+                map_arrow_right.style.visibility = "hidden"
+            }
+
+            if(step > 0){
+                map_arrow_left.style.visibility = "visible"
+            }
+
+        }
+
+        function arrow_left(){
+
+            if(step > 0){
+                step -= 1
+                update_quest()
+            }
+
+            update_arrows()
+
+            const paramsString = window.location.href
+            const searchParams = new URLSearchParams(paramsString)
+            update_url(searchParams, step + 1)
+
+        }
+
+        function arrow_right(){
+
+            if(step < max_steps){
+                step += 1
+                update_quest()
+            }
+
+            update_arrows()
+
+            const paramsString = window.location.href
+            const searchParams = new URLSearchParams(paramsString)
+            update_url(searchParams, step + 1)
+
+        }
+
+        function update_url(searchParams, arg_step){
+
+            //console.log(searchParams.get("job"), searchParams.get("guide"), arg_step)
+
+            let current_step = (arg_step) || searchParams.get("step") || 1
+
+            let get_url = window.location.href.split("?")[0]
+            let new_url = ""
+            
+            if(searchParams.get("job")){
+                new_url = get_url + "?&job=" + searchParams.get("job") + "&step=" + current_step
+            }
+            
+            if(searchParams.get("guide")){
+                new_url = get_url + "?&guide=" + searchParams.get("guide")
+            }
+
+            history.pushState({}, null, new_url)
+
+        }
+
+        function change_job(job, url_step){
+
+            const paramsString = window.location.href
+            const searchParams = new URLSearchParams(paramsString)
+
+            searchParams.delete("guide")
+
+            function check_and_set_steps(){
+
+                max_steps = class_quest.length
+
+                if(url_step > max_steps){
+                    url_step = max_steps
+                }
+
+            }
+            
+            url_step = url_step || 1
+
+            switch(job){
+                case "Swordsman":
+                    class_quest = swordsman_quest
+                    check_and_set_steps()
+                    searchParams.set("job", "Swordsman")
+                    searchParams.set("step", url_step)
+                    break
+                case "Knight":
+                    class_quest = knight_quest
+                    check_and_set_steps()
+                    searchParams.set("job", "Knight")
+                    searchParams.set("step", url_step)
+                    break
+                default:
+                    return
+            }
+
+            document.title = "Arkaik Fansite | Job Change"
+
+            update_url(searchParams, url_step)
+
+            map_arrow_left.style.visibility = "hidden"
+            map_arrow_right.style.visibility = "visible"
+
+            hide_wrappers()
+
+            max_steps = class_quest.length - 1
+            job_title.innerText = job + " Job Change"
+            step = 0
+            update_quest()
+            quest_wrapper.style.display = "block"
+
+        }
+
+        function guide(arg){
+
+            hide_wrappers()
+
+            const paramsString = window.location.href
+            const searchParams = new URLSearchParams(paramsString)
+
+            searchParams.delete("job")
+
+            document.title = "Arkaik Fansite | Guide"
+
+            switch(arg){
+                case "mining_guide":
+                    blacksmith_mining_wrapper.style.display = "block"
+                    searchParams.set("guide", "mining_guide")
+                default:
+                    break
+            }
+
+            update_url(searchParams)
+
+        }
+
+        function hide_wrappers(){
+            main_wrapper.style.display = "none"
+            quest_wrapper.style.display = "none"
+            blacksmith_mining_wrapper.style.display = "none"
+        }
+
+        function update_quest(){
+
+            if(step > max_steps){
+                step = max_steps
+            }
+
+            title.firstElementChild.innerText = class_quest[step].title
+
+            if(class_quest[step].map){
+                map.src = "images/minimap/" + class_quest[step].map + ".jpg"
+                map.alt = class_quest[step].map
+                map.style.display = "block"
+            }else{
+                map.src = ""
+                map.alt = "empty"
+                map.style.display = "none"
+            }
+
+            circle.style.display = "none"
+
+            if(class_quest[step].x && class_quest[step].y){
+                circle.style.left = class_quest[step].x + "px"
+                circle.style.top = class_quest[step].y + "px"
+                circle.style.display = "block"
+            }
+
+            desc.innerHTML = class_quest[step].description
+            steps.innerText = "(" + (step + 1) + "/" + (max_steps + 1) + ")"
+        }
+
+        function setup(){
+
+            const paramsString = window.location.href
+            const searchParams = new URLSearchParams(paramsString)
+
+            const params_job = searchParams.get("job")
+            const params_guide = searchParams.get("guide")
+            const url_step = parseInt(searchParams.get("step"))
+
+            if(params_job){
+
+                change_job(params_job, url_step)
+
+                if(url_step){
+                    step = url_step - 1
+                    update_quest()
+                    update_arrows()
+                }
+
+            }
+
+            if(params_guide){
+
+                guide(params_guide)
+
+            }
+
+        }
+
+        setup()
+
+    </script>
+    
+</body>
+</html>

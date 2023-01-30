@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+::selection{
+    background: #ff9800;
+}
+
+::-moz-selection{
+    background: #ff9800;
+}
+
+html, body{
+    color: #eee;
+    background-color: #222;
+    font-family: Tahoma, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    background-image: url("./images/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(211, 211, 211, 0.3);
+    overflow-x: hidden;
+}
+
+#content{
+    width: 900px;
+    max-width: 900px;
+    min-height: 100vh;
+    background-color: #000a;
+}
+
+#job-title{
+    margin: 0px auto;
+    width: 512px;
+    padding: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#logo-wrapper{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#logo-wrapper img{
+    width: 100%;
+}
+
+#main-intro-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#main-intro-wrapper p, #blacksmith-intro-wrapper p{
+    margin: 5px;
+}
+
+#quest-wrapper{
+    display: none;
+    margin-top: 50px;
+}
+
+#map-title{
+    margin: 0px auto;
+    width: 512px;
+    background-color: #0000ff80;
+    padding: 8px;
+    text-align: center;
+}
+
+#map-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#map{
+    position: relative;
+    width: 512px;
+    height: 512px;
+    margin: 0px 25px;
+    background-color: #000;
+}
+
+#map img{
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+#map-arrow-left{
+    width: 72px;
+    height: 78px;
+    cursor: pointer;
+    transform: rotate(-180deg);
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    visibility: hidden;
+}
+
+#map-arrow-right{
+    width: 72px;
+    height: 78px;
+    cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+#steps{
+    margin: 5px auto;
+    width: 512px;
+    text-align: center;
+}
+
+#description-wrapper{
+    margin: 20px auto;
+    width: 512px;
+}
+
+#circle{
+    position: absolute;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 6px solid #ff0;
+}
+
+#navbar{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    display: flex;
+    z-index: 1000;
+}
+
+#navbar p{
+    text-shadow: 0px 0px 3px #000;
+}
+
+.nav-button{
+    min-width: 50px;
+    height: 60px;
+    background-color: #ff5722;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    cursor: pointer;
+    position: relative;
+}
+
+.job-extend{
+    border-right: 4px dotted #ffeb3b;
+}
+
+.nav-button:hover{
+    background-color: #c64319;
+}
+
+#nav-jobchange:hover .nav-select{
+    display: block;
+}
+
+#nav-guide:hover .nav-select{
+    display: block;
+}
+
+#blacksmith-mining-wrapper{
+    display: none;
+    margin-top: 50px;
+}
+
+#blacksmith-mining-wrapper #map{
+    margin: 0px auto;
+}
+
+#blacksmith-intro-wrapper, #blacksmith-refinement-wrapper, #blacksmith-weapon-crafting-wrapper{
+    margin: 0px auto;
+    width: 512px;
+    padding: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#blacksmith-mining-guide-title, #blacksmith-refinement-title, #blacksmith-weapon-crafting-title{
+    margin: 0px auto;
+    width: 512px;
+    padding: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.nav-select{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding-top: 61px;
+    height: 60px;
+    display: none;
+    width: 100%;
+}
+
+.nav-select th{
+    font-size: 12px;
+    cursor: default;
+}
+
+.nav-select td{
+    padding: 10px;
+    background-color: #ff6a3d;
+    text-shadow: 0px 0px 3px #000;
+}
+
+.nav-select td:hover{
+    background-color: #c64319;
+}
+
+.crafting-wrapper{
+    border: 1px solid #FFF;
+    padding-top: 10px;
+    margin-bottom: 40px;
+}
+
+.skill-info{
+    display: flex;
+    align-items: center;
+    margin: 30px;
+}
+
+.mini-icon{
+    position: relative;
+    top: 5px;
+}
+
+.mini-icon img{
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.hint{
+    font-size: 12px;
+    color: #FA0;
+}
+
+.item{
+    color: #4caf50;
+}
+
+.skill{
+    color: #c896ff;
+}
+
+.monster{
+    color: #f44336;
+}
+
+.npc{
+    color: #ffeb3b;
+}
+
+.crossed{
+    text-decoration: line-through;
+    text-decoration-color: #000;
+    cursor: not-allowed;
+}
