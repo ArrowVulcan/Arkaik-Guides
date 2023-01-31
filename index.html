@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="description" content="A fansite with guides for the game Arkaik: Tales of Sarina.">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,7 +52,7 @@
                             <td class="crossed">Rogue</td>
                         </tr>
                         <tr>
-                            <td class="crossed">Acolyte</td>
+                            <td onclick="change_job('Acolyte')">Acolyte</td>
                             <td class="crossed">Priest</td>
                             <td class="crossed">Monk</td>
                         </tr>
@@ -529,6 +530,12 @@
 
     </div>
 
+    <div id="github-logo">
+        <a href="https://github.com/ArrowVulcan/Arkaik-Guides">
+            <img src="./images/github-mark-white.png" alt="github" width="40px" height="39px">
+        </a>
+    </div>
+
     <script type="text/javascript" src="scripts/index.js"></script>
 
     <script>
@@ -655,12 +662,17 @@
                     searchParams.set("job", "Knight")
                     searchParams.set("step", url_step)
                     break
+                case "Acolyte":
+                    class_quest = acolyte_quest
+                    check_and_set_steps()
+                    searchParams.set("job", "Acolyte")
+                    searchParams.set("step", url_step)
+                    break
                 default:
                     return
             }
 
             document.title = "Arkaik Fansite | Job Change"
-
             update_url(searchParams, url_step)
 
             map_arrow_left.style.visibility = "hidden"
