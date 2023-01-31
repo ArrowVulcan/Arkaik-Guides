@@ -398,3 +398,143 @@ var priest_quest = [
         "description": "Talk with <span class='npc'>[Yuna Priestess]</span>. You are now a Priest!<br><span class='hint'>Talking with <span class='npc'>[Yuna Priestess]</span> after you became a Priest will give you buffs (15 min <span class='skill'>Blessing</span> and <span class='skill'>Angelus</span>, 10 min <span class='skill'>Suffragium</span> and <span class='skill'>Impositio Manus</span>)</span>"
     },
 ]
+
+var magician_quest = [
+    {
+        "title": "Quest Magician - (1/4)",
+        "map": "geffen",
+        "x": 230,
+        "y": 358,
+        "description": "Walk out of the Geffen house and talk with <span class='npc'>[Kafra]</span> and warp to Zero."
+    },
+    {
+        "title": "Quest Magician - (1/4)",
+        "map": "zero",
+        "x": 219,
+        "y": 288,
+        "description": "Talk to <span class='npc'>[Kafra]</span> and choose warp to Izlude."
+    },
+    {
+        "title": "Quest Magician - (1/4)",
+        "map": "izlude",
+        "x": 169,
+        "y": 325,
+        "description": "Walk to the bridge to meet <span class='npc'>[Megumin]</span>."
+    },
+    {
+        "title": "Quest Magician - (2/4)",
+        "map": "izlude",
+        "x": 13,
+        "y": 328,
+        "description": "Walk left and enter the portal."
+    },
+    {
+        "title": "Quest Magician - (2/4)",
+        "map": "prt_fild08",
+        "x": 190,
+        "y": 23,
+        "description": "Walk to Prontera entrance at the top of the map and talk with <span class='npc'>[Leader of Volunteers]</span>."
+    },
+    {
+        "title": "Quest Magician - (3/4)",
+        "map": "prt_fild08",
+        "description": "Kill 20 <span class='monster'>[Pupa]</span>, 30 <span class='monster'>[Poring]</span> and 10 <span class='monster'>[Drops]</span>.<br><span class='hint'>I recommend to collect a <span class='item'>Rod [4]</span> from <span class='monster'>[Drops]</span>.</span>"
+    },
+    {
+        "title": "Quest Magician - (3/4)",
+        "map": "prt_fild08",
+        "x": 190,
+        "y": 23,
+        "description": "Go back and talk with <span class='npc'>[Leader of Volunteers]</span> again."
+    },
+    {
+        "title": "Quest Magician - (4/4)",
+        "map": "geffen",
+        "x": 115,
+        "y": 112,
+        "description": "Go into the Geffen house and talk with <span class='npc'>[Fladneg]</span>. You are now a Magician!"
+    },
+]
+
+var wizard_quest = [
+    {
+        "title": "Job Change",
+        "map": "geffen",
+        "x": 235,
+        "y": 247,
+        "description": "Get to Geffen and enter the Geffen Tower."
+    },
+    {
+        "title": "Job Change",
+        "description": "Walk up the stairs all the way to the top and talk with <span class='npc'>[Receptionist]</span>."
+    },
+    {
+        "title": "Job Change",
+        "description": "Walk down all the stairs and exit the tower. When outside <span class='npc'>[Confused Girl]</span> will start to talk with you."
+    },
+    {
+        "title": "Wizard (1/5)",
+        "map": "geffen",
+        "description": "Use the scroll <span class='item'>[Warp (hu_fild06)]</span> that <span class='npc'>[Confused Girl]</span> gave you or just talk with her and she will teleport you there."
+    },
+    {
+        "title": "Wizard (1/5)",
+        "map": "hu_fild06",
+        "x": 250,
+        "y": 201,
+        "description": "Talk with <span class='npc'>[Yrrah]</span>."
+    },
+    {
+        "title": "Wizard (2/5)",
+        "map": "hu_fild06",
+        "x": 250,
+        "y": 201,
+        "description": "Talk with <span class='npc'>[Yrrah]</span> again and do the first test (reflex test).<br><span class='hint'>Failing the reflex test will kill you, damaging your gear and send you back to your last saved point. Go back to <span class='npc'>[Confused Girl]</span> outside Geffen Tower to get back again.</span>"
+    },
+    {
+        "title": "Wizard (3/5)",
+        "map": "hu_fild06",
+        "x": 250,
+        "y": 201,
+        "description": "Talk with <span class='npc'>[Yrrah]</span> again and do the second test (vision test).<br><span class='hint'>Failing the vision test will kill you, damaging your gear and send you back to your last saved point. Go back to <span class='npc'>[Confused Girl]</span> outside Geffen Tower to get back again.</span>"
+    },
+    {
+        "title": "Wizard (4/5)",
+        "map": "hu_fild06",
+        "x": 250,
+        "y": 201,
+        "description": "Talk with <span class='npc'>[Yrrah]</span> again and do the last test (patience test).<br><span class='hint'>Failing the patience test will kill you, damaging your gear and send you back to your last saved point. Go back to <span class='npc'>[Confused Girl]</span> outside Geffen Tower to get back again.</span>"
+    },
+    {
+        "title": "Wizard (5/5)",
+        "map": "hu_fild06",
+        "x": 234,
+        "y": 8,
+        "description": "Walk to Hugel city.<br><span class='hint'>You can use the ability <span class='skill'>[Return]</span> and find a <span class='npc'>[Kafra]</span> to teleport to Geffen. If you do this, skip to step 12."
+    },
+    {
+        "title": "Wizard (5/5)",
+        "map": "hugel",
+        "x": 324,
+        "y": 241,
+        "description": "Talk to <span class='npc'>[Airplane Captain]</span> and take the airplane to Izlude."
+    },
+    {
+        "title": "Wizard (5/5)",
+        "map": "izlude",
+        "x": 247,
+        "y": 304,
+        "description": "Use <span class='npc'>[Kafra]</span> and warp to Geffen."
+    },
+    {
+        "title": "Wizard (5/5)",
+        "map": "geffen",
+        "x": 235,
+        "y": 247,
+        "description": "Enter the Geffen Tower."
+    },
+    {
+        "title": "Wizard (5/5)",
+        "description": "Walk up the stairs all the way to the top and talk with <span class='npc'>[Receptionist]</span>. You are now a Wizard!"
+    },
+]
