@@ -299,3 +299,102 @@ var acolyte_quest = [
         "description": "Talk with <span class='npc'>[Sasha White]</span>. You are now a Acolyte!"
     },
 ]
+
+var priest_quest = [
+    {
+        "title": "Job Change",
+        "map": "zero_field",
+        "x": 365,
+        "y": 105,
+        "description": "Enter Zero Florest from Zero city and walk to the church."
+    },
+    {
+        "title": "Job Change",
+        "description": "Walk straight up and talk with <span class='npc'>[Sister]</span> on the left side."
+    },
+    {
+        "title": "Priest (1/3)",
+        "description": "After you get teleported to another room, talk with <span class='npc'>[Yuna Priestess]</span>."
+    },
+    {
+        "title": "Priest (1/3)",
+        "description": "Use ability <span class='skill'>[Return]</span> or walk back to Zero city and find a inn to sleep in.</span><br><span class='hint'>Any city's inn bed works to sleep in.</span>"
+    },
+    {
+        "title": "Priest (2/3)",
+        "description": "Walk straight up to the top and talk with <span class='npc'>[Valkyria]</span>."
+    },
+    {
+        "title": "Priest (2/3)",
+        "description": "Walk right and talk with <span class='npc'>[Bettergeuse]</span>.<br><span class='hint'>To get her approval, she will need to remove 5 base levels from you.</span>"
+    },
+    {
+        "title": "Priest (2/3)",
+        "description": "Walk all the way to the left and talk with <span class='npc'>[Salazar]</span>."
+    },
+    {
+        "title": "Priest (2/3)",
+        "description": "Walk back and down to <span class='npc'>[Receptionist Angel]</span> and return to the normal world."
+    },
+    {
+        "title": "Priest (2/3)",
+        "description": "Find a <span class='npc'>[Kafra]</span> and teleport to Alberta. <br><span class='hint'>If Alberta is not in the list, teleport to Zero first and from Zero teleport to Alberta. You can also use the boat to travel to Alberta.</span>"
+    },
+    {
+        "title": "Priest (2/3)",
+        "map": "alberta",
+        "x": 329,
+        "y": 213,
+        "description": "Talk with <span class='npc'>[Fisk]</span> and travel to Alberta Island.<br><span class='hint'>Traveling to Alberta Island cost 5.000 zeny.</span>"
+    },
+    {
+        "title": "Priest (2/3)",
+        "description": "Walk up and right and you will find a sunken boat, enter the portal on the boat."
+    },
+    {
+        "title": "Priest (2/3)",
+        "map": "treasure01",
+        "description": "Kill <span class='monster'>[Pirate Skeleton]</span> and collect 5 <span class='item'>[Silver Coin]</span>."
+    },
+    {
+        "title": "Priest (2/3)",
+        "map": "treasure01",
+        "x": 155,
+        "y": 431,
+        "description": "Use ability <span class='skill'>[Return]</span> or walk back to <span class='npc'>[Fisk]</span> at the other boat outside and he will take you back to Alberta where you can go and sleep in the inn."
+    },
+    {
+        "title": "Priest (2/3)",
+        "description": "When you are in the sleep world (????), walk all the way up and take left and talk with <span class='npc'>[Salazar]</span> to get his approval."
+    },
+    {
+        "title": "Priest (2/3)",
+        "description": "Now go right and talk with <span class='npc'>[Valkyria]</span>.<br><span class='hint'>You WILL need to change your characters name.</span>"
+    },
+    {
+        "title": "Priest (3/3)",
+        "description": "Find a <span class='npc'>[Kafra]</span> and teleport to Zero city."
+    },
+    {
+        "title": "Priest (3/3)",
+        "map": "zero",
+        "x": 238,
+        "y": -5,
+        "description": "Walk to the portal at the top of the map to enter Zero Florest."
+    },
+    {
+        "title": "Priest (3/3)",
+        "map": "zero_field",
+        "x": 365,
+        "y": 105,
+        "description": "Walk to the church."
+    },
+    {
+        "title": "Priest (3/3)",
+        "description": "Walk straight up and talk with <span class='npc'>[Sister]</span> on the left side and she will teleport you to <span class='npc'>[Yuna Priestess]</span>."
+    },
+    {
+        "title": "Priest (3/3)",
+        "description": "Talk with <span class='npc'>[Yuna Priestess]</span>. You are now a Priest!<br><span class='hint'>Talking with <span class='npc'>[Yuna Priestess]</span> after you became a Priest will give you buffs (15 min <span class='skill'>Blessing</span> and <span class='skill'>Angelus</span>, 10 min <span class='skill'>Suffragium</span> and <span class='skill'>Impositio Manus</span>)</span>"
+    },
+]
