@@ -754,15 +754,15 @@ var thief_quest = [
     },
     {
         "title": "Quest Thief - (1/2)",
-        "description": "On the first floor, you will see two <span class='npc'>[Security]</span> npc's. You will need to sneak past them without being seen."
+        "description": "On the first floor, you will see three <span class='npc'>[Security]</span> npc's. You will need to sneak past them without being seen. One of the <span class='npc'>[Security]</span> will switch between looking left and looking down. You need to walk down when he starts to look downward and walk right when he looks left.<br><span class='hint'>If you get caught, you will be taken back to <span class='npc'>[Felt]</span> in the pyramid. If you set your save point in Geffen, just use <span class='skill'>[Return]</span> to quickly get back and try again.</span><br><br><iframe allow='fullscreen' class='video' width='512' height='512' src='https://www.youtube.com/embed/gTdIA691CbM'></iframe>"
     },
     {
         "title": "Quest Thief - (1/2)",
-        "description": "On the second floor, you will need to jump over the fence."
+        "description": "On the second floor, you will need to walk up and turn left and hug the wall and walk down until you reach a fence. Click the fence to jump over it and walk behind the <span class='npc'>[Security]</span> to the stairs portal.<br><span class='hint'>If you get caught, you will be taken back to <span class='npc'>[Felt]</span> in the pyramid. If you set your save point in Geffen, just use <span class='skill'>[Return]</span> to quickly get back and try again.</span><br><br><iframe allow='fullscreen' class='video' width='512' height='512' src='https://www.youtube.com/embed/hscw6AXrkFM'></iframe>"
     },
     {
         "title": "Quest Thief - (1/2)",
-        "description": "On the third floor, you will need to wait for the <span class='npc'>[Security]</span> to sneeze."
+        "description": "On the third floor, you will need to wait for the <span class='npc'>[Security]</span> to sneeze (Atchoo!!!) before you walk past infront of him. Once you are past him, walk into the portal to the next floor.<br><span class='hint'>If you get caught, you will be taken back to <span class='npc'>[Felt]</span> in the pyramid. If you set your save point in Geffen, just use <span class='skill'>[Return]</span> to quickly get back and try again.</span><br><br><iframe allow='fullscreen' class='video' width='512' height='512' src='https://www.youtube.com/embed/lYWTL8uznRo'></iframe>"
     },
     {
         "title": "Quest Thief - (1/2)",
