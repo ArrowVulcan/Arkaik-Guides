@@ -538,3 +538,155 @@ var wizard_quest = [
         "description": "Walk up the stairs all the way to the top and talk with <span class='npc'>[Receptionist]</span>. You are now a Wizard!"
     },
 ]
+
+var archer_quest = [
+    {
+        "title": "Quest Archer - (1/3)",
+        "description": "Enter the room to the left."
+    },
+    {
+        "title": "Quest Archer - (1/3)",
+        "description": "There are two black portals <span class='npc'>[Mira ao Alvo]</span>, one is a mini-game and the other is a 'Alternative' quest.<br><span class='hint'>This guide will use the alternative quest path.</span>"
+    },
+    {
+        "title": "Quest Archer - (2/3)",
+        "description": "Go back to <span class='npc'>[Salogel]</span> and talk to him."
+    },
+    {
+        "title": "Quest Archer - (3/3)",
+        "description": "Follow the yellow arrow path on the ground."
+    },
+    {
+        "title": "Quest Archer - (3/3)",
+        "map": "pay_fild08",
+        "description": "Kill <span class='monster'>[Willow]</span> and collect 30 <span class='npc'>[Solid Trunk]</span>"
+    },
+    {
+        "title": "Quest Archer - (3/3)",
+        "map": "pay_fild08",
+        "description": "Use ability <span class='skill'>[Return]</span> to get back to <span class='npc'>[Salogel]</span> and talk to him. You are now a Archer!"
+    },
+]
+
+var hunter_quest = [
+    {
+        "title": "Job Change",
+        "map": "izlude",
+        "x": 380,
+        "y": 369,
+        "description": "Go to Izlude and talk to <span class='npc'>[Airplane Captain]</span> and take the airplane to Hugel."
+    },
+    {
+        "title": "Job Change",
+        "map": "hugel",
+        "x": 379,
+        "y": 57,
+        "description": "Walk up and enter the house next to the water."
+    },
+    {
+        "title": "Job Change",
+        "description": "Talk with <span class='npc'>[Huntress]</span>."
+    },
+    {
+        "title": "Job Change",
+        "description": "Walk upstairs and talk to <span class='npc'>[Freecs]</span>."
+    },
+    {
+        "title": "Hunter (1/3)",
+        "map": "hugel",
+        "x": 324,
+        "y": 241,
+        "description": "Exit the house and walk down and talk to <span class='npc'>[Airplane Captain]</span> and take the airplane to Izlude.<br><span class='hint'>You can use the ability <span class='skill'>[Return]</span> and travel to Payon. If you do this, skip to step 7."
+    },
+    {
+        "title": "Hunter (1/3)",
+        "map": "izlude",
+        "x": 247,
+        "y": 304,
+        "description": "Use <span class='npc'>[Kafra]</span> and warp to Payon."
+    },
+    {
+        "title": "Hunter (1/3)",
+        "map": "payon",
+        "x": 188,
+        "y": 455,
+        "description": "Walk to the bottom portal in Payon."
+    },
+    {
+        "title": "Hunter (1/3)",
+        "map": "pay_fild01",
+        "x": 432,
+        "y": 482,
+        "description": "Walk down to the bottom portal."
+    },
+    {
+        "title": "Hunter (1/3)",
+        "map": "pay_fild02",
+        "description": "Kill 90 <span class='monster'>[Wolf]</span> and collect 100 <span class='item'>[Wolf Claw]</span> from them."
+    },
+    {
+        "title": "Hunter (1/3)",
+        "map": "pay_fild02",
+        "x": 265,
+        "y": -11,
+        "description": "Go back to the portal at the top of the map."
+    },
+    {
+        "title": "Hunter (1/3)",
+        "map": "pay_fild01",
+        "x": 408,
+        "y": -1,
+        "description": "Enter Payon city with the portal at the top of the map."
+    },
+    {
+        "title": "Hunter (1/3)",
+        "map": "payon",
+        "x": 289,
+        "y": 339,
+        "description": "Talk to <span class='npc'>[Kafra]</span> and choose warp to Zero."
+    },
+    {
+        "title": "Hunter (1/3)",
+        "map": "zero",
+        "x": 219,
+        "y": 288,
+        "description": "Talk to <span class='npc'>[Kafra]</span> and warp to Izlude."
+    },
+    {
+        "title": "Hunter (1/3)",
+        "map": "izlude",
+        "x": 380,
+        "y": 369,
+        "description": "Talk to <span class='npc'>[Airplane Captain]</span> and take the airplane to Hugel."
+    },
+    {
+        "title": "Hunter (1/3)",
+        "map": "hugel",
+        "x": 379,
+        "y": 57,
+        "description": "Walk up and enter the house next to the water."
+    },
+    {
+        "title": "Hunter (1/3)",
+        "description": "Walk upstairs and talk to <span class='npc'>[Freecs]</span>."
+    },
+    {
+        "title": "Hunter (2/3)",
+        "description": "When you are inside the Hunter Test Room for the Accuracy test, Talk to <span class='npc'>[Freecs]</span> and take the test.<br><span class='hint'>There is a queue system for the test so you might need to wait for another player to finish their try.</span><br><br><span class='hint'>Based on the name in the first square, this is the location of the <span class='monster'>[Poring]</span>.</span><br><span class='hint'>Poring = 1</span><br><span class='hint'>Poyong = 2</span><br><span class='hint'>Poporing = 3</span><br><span class='hint'>Poing = 4</span><br><span class='hint'>Popuri = 6</span><br><span class='hint'>Pork = 7</span><br><span class='hint'>Marine = 8</span><br><span class='hint'>Marun = 9</span>"
+    },
+    {
+        "title": "Hunter (2/3)",
+        "description": "When you are done with the test, talk with <span class='npc'>[Freecs]</span>."
+    },
+    {
+        "title": "Hunter (3/3)",
+        "map": "hugel",
+        "x": 379,
+        "y": 57,
+        "description": "Walk to the house next to the water."
+    },
+    {
+        "title": "Hunter (3/3)",
+        "description": "Talk with <span class='npc'>[Huntress]</span>. You are now a Hunter!"
+    },
+]
