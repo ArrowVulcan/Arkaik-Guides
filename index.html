@@ -47,8 +47,8 @@
                             <td class="crossed">Alchemist</td>
                         </tr>
                         <tr>
-                            <td class="crossed">Thief</td>
-                            <td class="crossed">Assassin</td>
+                            <td onclick="change_job('Thief')">Thief</td>
+                            <td onclick="change_job('Assassin')">Assassin</td>
                             <td class="crossed">Rogue</td>
                         </tr>
                         <tr>
@@ -696,6 +696,18 @@
                     class_quest = hunter_quest
                     check_and_set_steps()
                     searchParams.set("job", "Hunter")
+                    searchParams.set("step", url_step)
+                    break
+                case "Thief":
+                    class_quest = thief_quest
+                    check_and_set_steps()
+                    searchParams.set("job", "Thief")
+                    searchParams.set("step", url_step)
+                    break
+                case "Assassin":
+                    class_quest = assassin_quest
+                    check_and_set_steps()
+                    searchParams.set("job", "Assassin")
                     searchParams.set("step", url_step)
                     break
                 default:

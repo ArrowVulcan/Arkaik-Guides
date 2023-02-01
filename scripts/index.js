@@ -690,3 +690,332 @@ var hunter_quest = [
         "description": "Talk with <span class='npc'>[Huntress]</span>. You are now a Hunter!"
     },
 ]
+
+var thief_quest = [
+    {
+        "title": "Quest Thief - (1/2)",
+        "map": "moc_prydb1",
+        "x": 128,
+        "y": 196,
+        "description": "Leave the room through the portal on the right."
+    },
+    {
+        "title": "Quest Thief - (1/2)",
+        "map": "moc_prydb1",
+        "x": 235,
+        "y": 4,
+        "description": "Walk all the way to the top and enter the portal."
+    },
+    {
+        "title": "Quest Thief - (1/2)",
+        "map": "moc_pryd01",
+        "x": 474,
+        "y": 471,
+        "description": "Find the way to the portal at the bottom right to exit the pyramid.<br><span class='hint'>Make sure to avoid <span class='monster'>[Mummy]</span> as they will kill you.</span>"
+    },
+    {
+        "title": "Quest Thief - (1/2)",
+        "map": "moc_ruins",
+        "x": 406,
+        "y": 413,
+        "description": "Go all the way to the bottom right of the map and enter the portal to Morocc City."
+    },
+    {
+        "title": "Quest Thief - (1/2)",
+        "map": "morocc",
+        "x": 220,
+        "y": 328,
+        "description": "Find and talk with <span class='npc'>[Kafra]</span> and warp to Zero."
+    },
+    {
+        "title": "Quest Thief - (1/2)",
+        "map": "zero",
+        "x": 219,
+        "y": 288,
+        "description": "Talk to <span class='npc'>[Kafra]</span> and warp to Geffen."
+    },
+    {
+        "title": "Quest Thief - (1/2)",
+        "map": "geffen",
+        "x": 228,
+        "y": 357,
+        "description": "Talk with <span class='npc'>[Kafra]</span> here in Geffen and use save point.<br><span class='hint'>If you have done this before, you can skip saving here to be able to teleport back to <span class='npc'>[Felt]</span> with the skill <span class='skill'>[Return]</span> later. However, if you get detected once, it is not worth skipping this.</span>"
+    },
+    {
+        "title": "Quest Thief - (1/2)",
+        "map": "geffen",
+        "x": 235,
+        "y": 247,
+        "description": "Enter the Geffen Tower."
+    },
+    {
+        "title": "Quest Thief - (1/2)",
+        "description": "When inside the Geffen Tower, walk up the stairs to the next floor. (Both side works)"
+    },
+    {
+        "title": "Quest Thief - (1/2)",
+        "description": "On the first floor, you will see two <span class='npc'>[Security]</span> npc's. You will need to sneak past them without being seen."
+    },
+    {
+        "title": "Quest Thief - (1/2)",
+        "description": "On the second floor, you will need to jump over the fence."
+    },
+    {
+        "title": "Quest Thief - (1/2)",
+        "description": "On the third floor, you will need to wait for the <span class='npc'>[Security]</span> to sneeze."
+    },
+    {
+        "title": "Quest Thief - (1/2)",
+        "description": "On the fourth floor, talk to <span class='npc'>[Master of Ceremony]</span>."
+    },
+    {
+        "title": "Quest Thief - (2/2)",
+        "map": "geffen",
+        "x": 228,
+        "y": 357,
+        "description": "Talk with <span class='npc'>[Kafra]</span> and warp to Zero."
+    },
+    {
+        "title": "Quest Thief - (2/2)",
+        "map": "zero",
+        "x": 219,
+        "y": 288,
+        "description": "Talk to <span class='npc'>[Kafra]</span> and warp to Morocc."
+    },
+    {
+        "title": "Quest Thief - (2/2)",
+        "map": "morocc",
+        "x": 19,
+        "y": 22,
+        "description": "Walk all the way up to the top left corner of the map and enter the portal."
+    },
+    {
+        "title": "Quest Thief - (2/2)",
+        "map": "moc_ruins",
+        "x": 128,
+        "y": 77,
+        "description": "Walk all the way up to the top left corner again and enter the pyramid."
+    },
+    {
+        "title": "Quest Thief - (2/2)",
+        "map": "moc_pryd01",
+        "x": 211,
+        "y": 213,
+        "description": "Find the way to the portal at the center.<br><span class='hint'>Make sure to avoid <span class='monster'>[Mummy]</span> as they will kill you.</span>"
+    },
+    {
+        "title": "Quest Thief - (2/2)",
+        "map": "moc_prydb1",
+        "x": 210,
+        "y": 196,
+        "description": "Walk down and take the portal to the left."
+    },
+    {
+        "title": "Quest Thief - (2/2)",
+        "map": "moc_prydb1",
+        "x": 81,
+        "y": 154,
+        "description": "Talk to <span class='npc'>[Felt]</span>. You are now a Thief!"
+    },
+]
+
+var assassin_quest = [
+    {
+        "title": "Job Change",
+        "map": "morocc",
+        "x": 235,
+        "y": 457,
+        "description": "Exit Morocc from the center bottom portal."
+    },
+    {
+        "title": "Job Change",
+        "map": "moc_fild12",
+        "x": 447,
+        "y": 269,
+        "description": "Go to the portal on the right side of the map."
+    },
+    {
+        "title": "Job Change",
+        "map": "moc_fild11",
+        "x": 249,
+        "y": 468,
+        "description": "Go to the portal at the bottom of the map."
+    },
+    {
+        "title": "Job Change",
+        "map": "moc_fild17",
+        "x": 463,
+        "y": 142,
+        "description": "Go to the portal at the right side of the map."
+    },
+    {
+        "title": "Job Change",
+        "map": "moc_fild16",
+        "x": 244,
+        "y": 106,
+        "description": "Enter the portal at the center of the map."
+    },
+    {
+        "title": "Job Change",
+        "description": "Talk with <span class='npc'>[Lars]</span> inside."
+    },
+    {
+        "title": "Job Change",
+        "description": "After being warped to another room, talk with <span class='npc'>[Akame]</span>."
+    },
+    {
+        "title": "Assassin (1/7)",
+        "description": "After being warped to yet another room, talk with <span class='npc'>[Assassin]</span>."
+    },
+    {
+        "title": "Assassin (2/7)",
+        "description": "The <span class='npc'>[Assassin]</span> will teleport you to Geffen Tower, go down the stairs next to you."
+    },
+    {
+        "title": "Assassin (2/7)",
+        "description": "Go down the stairs again in this room."
+    },
+    {
+        "title": "Assassin (2/7)",
+        "description": "Go to the portal in this room."
+    },
+    {
+        "title": "Assassin (2/7)",
+        "description": "Kill a <span class='monster'>[Wizzard Protector]</span> that is found in this room.<br><span class='hint'>The <span class='monster'>[Wizzard Protector]</span> has very high health and casts his abilities a lot but his damage is very low.</span>"
+    },
+    {
+        "title": "Assassin (3/7)",
+        "description": "Go back to the portal you came from and continue walking straight trough all the portals until you exit the tower and reach the Geffen city."
+    },
+    {
+        "title": "Assassin (3/7)",
+        "map": "geffen",
+        "x": 230,
+        "y": 358,
+        "description": "Talk with <span class='npc'>[Kafra]</span> and warp to Zero."
+    },
+    {
+        "title": "Assassin (3/7)",
+        "map": "zero",
+        "x": 219,
+        "y": 288,
+        "description": "Talk to <span class='npc'>[Kafra]</span> and warp to Morocc."
+    },
+    {
+        "title": "Assassin (3/7)",
+        "map": "morocc",
+        "x": 235,
+        "y": 457,
+        "description": "Exit Morocc from the center bottom portal."
+    },
+    {
+        "title": "Assassin (3/7)",
+        "map": "moc_fild12",
+        "x": 447,
+        "y": 269,
+        "description": "Go to the portal on the right side of the map."
+    },
+    {
+        "title": "Assassin (3/7)",
+        "map": "moc_fild11",
+        "x": 249,
+        "y": 468,
+        "description": "Go to the portal at the bottom of the map."
+    },
+    {
+        "title": "Assassin (3/7)",
+        "map": "moc_fild17",
+        "x": 463,
+        "y": 142,
+        "description": "Go to the portal at the right side of the map."
+    },
+    {
+        "title": "Assassin (3/7)",
+        "map": "moc_fild16",
+        "x": 244,
+        "y": 106,
+        "description": "Enter the portal at the center of the map."
+    },
+    {
+        "title": "Assassin (3/7)",
+        "description": "Talk with <span class='npc'>[Lars]</span> inside."
+    },
+    {
+        "title": "Assassin (3/7)",
+        "description": "Talk with <span class='npc'>[Akame]</span>."
+    },
+    {
+        "title": "Assassin (4/7)",
+        "description": "Talk with <span class='npc'>[Assassin]</span>."
+    },
+    {
+        "title": "Assassin (5/7)",
+        "map": "izlude",
+        "x": 225,
+        "y": 44,
+        "description": "After you got teleported to Izlude, go to the portal at the top to enter the Knights Academy."
+    },
+    {
+        "title": "Assassin (5/7)",
+        "description": "Enter the second room on the left side and find <span class='npc'>[Sebastian]</span>. When you walk near him, he will start to talk. Use your ability <span class='skill'>[Hiding]</span> when he say 'And then we will run the covert operation...'.<br><span class='hint'>Don't click on <span class='npc'>[Sebastian]</span> while in <span class='skill'>[Hiding]</span> as your character will get locked and you need to restart the game.</span>"
+    },
+    {
+        "title": "Assassin (6/7)",
+        "description": "Walk out of the Knights Academy with the portal at the bottom."
+    },
+    {
+        "title": "Assassin (6/7)",
+        "map": "izlude",
+        "x": 247,
+        "y": 304,
+        "description": "Use <span class='npc'>[Kafra]</span> and warp to Morocc."
+    },
+
+    {
+        "title": "Assassin (6/7)",
+        "map": "morocc",
+        "x": 235,
+        "y": 457,
+        "description": "Exit Morocc from the center bottom portal."
+    },
+    {
+        "title": "Assassin (6/7)",
+        "map": "moc_fild12",
+        "x": 447,
+        "y": 269,
+        "description": "Go to the portal on the right side of the map."
+    },
+    {
+        "title": "Assassin (6/7)",
+        "map": "moc_fild11",
+        "x": 249,
+        "y": 468,
+        "description": "Go to the portal at the bottom of the map."
+    },
+    {
+        "title": "Assassin (6/7)",
+        "map": "moc_fild17",
+        "x": 463,
+        "y": 142,
+        "description": "Go to the portal at the right side of the map."
+    },
+    {
+        "title": "Assassin (6/7)",
+        "map": "moc_fild16",
+        "x": 244,
+        "y": 106,
+        "description": "Enter the portal at the center of the map."
+    },
+    {
+        "title": "Assassin (6/7)",
+        "description": "Talk with <span class='npc'>[Lars]</span> inside."
+    },
+    {
+        "title": "Assassin (6/7)",
+        "description": "Talk with <span class='npc'>[Akame]</span>."
+    },
+    {
+        "title": "Assassin (6/7)",
+        "description": "Talk with <span class='npc'>[Akame]</span> again. You are now an Assassin!<br><span class='hint'>This should cost zeny to complete but the NPC keep saying 49.099 Zeny, the quest description say 80.000 zeny but no zeny is removed in the end. (This is probably a bug in the beta)</span>"
+    },
+]// 49.099 zeny
