@@ -1018,4 +1018,561 @@ var assassin_quest = [
         "title": "Assassin (6/7)",
         "description": "Talk with <span class='npc'>[Akame]</span> again. You are now an Assassin!<br><span class='hint'>This should cost zeny to complete but the NPC keep saying 49.099 Zeny, the quest description say 80.000 zeny but no zeny is removed in the end. (This is probably a bug in the beta)</span>"
     },
-]// 49.099 zeny
+]
+
+var merchant_quest = [
+    {
+        "title": "Quest Merchant - (1/6)",
+        "description": "Exit the house where you talked with <span class='npc'>[Violet]</span>."
+    },
+    {
+        "title": "Quest Merchant - (1/6)",
+        "map": "alberta",
+        "x": 308,
+        "y": 180,
+        "description": "Enter any of the two portals on the left side of the boat."
+    },
+    {
+        "title": "Quest Merchant - (1/6)",
+        "description": "Use the portal that goes downstairs."
+    },
+    {
+        "title": "Quest Merchant - (1/6)",
+        "description": "Inside the last bottom room there is a bunny hidden next to the barrels, click on it.<br><span class='hint'>You will need to rotate the camera a little to see the bunny toy.</span>"
+    },
+    {
+        "title": "Quest Merchant - (2/6)",
+        "description": "Go back up and get outside the ship."
+    },
+    {
+        "title": "Quest Merchant - (2/6)",
+        "map": "alberta",
+        "x": 45,
+        "y": 418,
+        "description": "Walk all the way down to the building and enter it."
+    },
+    {
+        "title": "Quest Merchant - (2/6)",
+        "description": "Talk with <span class='npc'>[Violet]</span>."
+    },
+    {
+        "title": "Quest Merchant - (3/6)",
+        "description": "Exit the house."
+    },
+    {
+        "title": "Quest Merchant - (3/6)",
+        "map": "alberta",
+        "x": 200,
+        "y": 375,
+        "description": "Go and talk with <span class='npc'>[Kafra]</span> and warp to Zero."
+    },
+    {
+        "title": "Quest Merchant - (3/6)",
+        "map": "zero",
+        "x": 238,
+        "y": -5,
+        "description": "Walk to the portal at the top of the map to enter Zero Florest."
+    },
+    {
+        "title": "Quest Merchant - (3/6)",
+        "map": "zero_field",
+        "x": 83,
+        "y": 29,
+        "description": "Talk with <span class='npc'>[Beatriz]</span> at the top left of Zero Florest."
+    },
+    {
+        "title": "Quest Merchant - (4/6)",
+        "map": "zero_field",
+        "x": 320,
+        "y": 328,
+        "description": "Find and talk with <span class='npc'>[Anne]</span>."
+    },
+    {
+        "title": "Quest Merchant - (5/6)",
+        "map": "zero_field",
+        "description": "Kill the two <span class='monster'>[Desert Wolf Baby]</span>."
+    },
+    {
+        "title": "Quest Merchant - (6/6)",
+        "map": "zero_field",
+        "x": 236,
+        "y": 466,
+        "description": "Go back to Zero city by using the portal at the bottom of Zero Florest.<br><span class='hint'>You can use the skill <span class='skill'>[Return]</span> to instantly get back to <span class='npc'>[Violet]</span> in Alberta if you didn't save your save point somewhere else. If you used the skill <span class='skill'>[return]</span>, skip to step 17.</span>"
+    },
+    {
+        "title": "Quest Merchant - (6/6)",
+        "map": "zero",
+        "x": 219,
+        "y": 288,
+        "description": "Talk to <span class='npc'>[Kafra]</span> and warp to Alberta."
+    },
+    {
+        "title": "Quest Merchant - (6/6)",
+        "map": "alberta",
+        "x": 45,
+        "y": 418,
+        "description": "Walk all the way down to the building and enter it."
+    },
+    {
+        "title": "Quest Merchant - (6/6)",
+        "description": "Talk with <span class='npc'>[Violet]</span>. You are now a Merchant!"
+    },
+]
+
+var blacksmith_quest = [
+    {
+        "title": "Job Change",
+        "map": "zero",
+        "x": 415,
+        "y": 172,
+        "description": "Talk with the <span class='npc'>[Train Engineer]</span> in Zero city and choose Einbroch as destination."
+    },
+    {
+        "title": "Job Change",
+        "map": "einbroch",
+        "x": 175,
+        "y": 172,
+        "description": "Enter the house.<br><span class='hint'>The air in Einbroch is toxic and will slowly damage you. Item such as <span class='item'>[Flu Mask]</span> can be used to protect against it.</span>"
+    },
+    {
+        "title": "Job Change",
+        "description": "Talk with <span class='npc'>[Claus]</span> and tell him you want to be a blacksmith."
+    },
+    {
+        "title": "Job Change",
+        "description": "Leave the house and a cutscene will start. After the cutscene, leave the house."
+    },
+    {
+        "title": "Blacksmith (1/8)",
+        "map": "einbroch",
+        "x": 322,
+        "y": 115,
+        "description": "Talk to the <span class='npc'>[Train Engineer]</span> and choose Zero as destination."
+    },
+    {
+        "title": "Blacksmith (1/8)",
+        "map": "zero",
+        "x": 420,
+        "y": 175,
+        "description": "Talk to <span class='npc'>[Kafra]</span> and warp to Geffen."
+    },
+    {
+        "title": "Blacksmith (1/8)",
+        "map": "geffen",
+        "x": 230,
+        "y": 358,
+        "description": "Talk to <span class='npc'>[Kafra]</span> and warp to Al De Baran."
+    },
+    {
+        "title": "Blacksmith (1/8)",
+        "map": "geffen",
+        "x": 230,
+        "y": 358,
+        "description": "Talk to <span class='npc'>[Kafra]</span> and warp to Al De Baran."
+    },
+    {
+        "title": "Blacksmith (1/8)",
+        "map": "aldebaran",
+        "x": 375,
+        "y": 333,
+        "description": "Talk to <span class='npc'>[Clause]</span>."
+    },
+    {
+        "title": "Blacksmith (2/8)",
+        "map": "aldebaran",
+        "x": 236,
+        "y": 240,
+        "description": "Enter the Clock Tower."
+    },
+    {
+        "title": "Blacksmith (2/8)",
+        "map": "c_tower1",
+        "description": "Find a gear laying on the floor inside.<br><span class='hint'>The monster inside are very strong, I recommend you to bring some <span class='item'>[Fly Wing]</span>.</span><br><br><img src='./images/items/piece_of_cogwheel.jpg' alt='cogwheel' width='60px' height='60px'><br><span class='hint'>The cog looks like the image above, just clicking on it and it will add a <span class='item'>[Piece of Cogwheel]</span> to your inventory.</span>"
+    },
+    {
+        "title": "Blacksmith (2/8)",
+        "map": "c_tower1",
+        "x": 236,
+        "y": 292,
+        "description": "Exit the Clock Tower."
+    },
+    {
+        "title": "Blacksmith (2/8)",
+        "map": "aldebaran",
+        "x": 375,
+        "y": 333,
+        "description": "Talk to <span class='npc'>[Clause]</span>."
+    },
+    {
+        "title": "Blacksmith (3/8)",
+        "map": "aldebaran",
+        "x": 229,
+        "y": 267,
+        "description": "Talk to <span class='npc'>[Kafra]</span> and warp to Zero."
+    },
+    {
+        "title": "Blacksmith (3/8)",
+        "map": "zero",
+        "x": 219,
+        "y": 288,
+        "description": "Talk to <span class='npc'>[Kafra]</span> and warp to morocc."
+    },
+    {
+        "title": "Blacksmith (3/8)",
+        "map": "morocc",
+        "x": 19,
+        "y": 22,
+        "description": "Walk all the way up to the top left corner of the map and enter the portal."
+    },
+    {
+        "title": "Blacksmith (3/8)",
+        "map": "moc_ruins",
+        "x": 204,
+        "y": 123,
+        "description": "Talk to <span class='npc'>[Rudolph]</span>."
+    },
+    {
+        "title": "Blacksmith (4/8)",
+        "map": "moc_ruins",
+        "x": 406,
+        "y": 413,
+        "description": "Go all the way to the bottom right of the map and enter the portal to Morocc City."
+    },
+    {
+        "title": "Blacksmith (4/8)",
+        "map": "morocc",
+        "x": 220,
+        "y": 328,
+        "description": "Find and talk with <span class='npc'>[Kafra]</span> and warp to Zero."
+    },
+    {
+        "title": "Blacksmith (4/8)",
+        "map": "zero",
+        "x": 219,
+        "y": 288,
+        "description": "Talk to <span class='npc'>[Kafra]</span> and warp to Geffen."
+    },
+    {
+        "title": "Blacksmith (4/8)",
+        "map": "geffen",
+        "x": 230,
+        "y": 358,
+        "description": "Talk to <span class='npc'>[Kafra]</span> and warp to Al De Baran."
+    },
+    {
+        "title": "Blacksmith (4/8)",
+        "map": "aldebaran",
+        "x": 375,
+        "y": 333,
+        "description": "Talk to <span class='npc'>[Clause]</span>."
+    },
+    {
+        "title": "Blacksmith (5/8)",
+        "map": "aldebaran",
+        "x": 229,
+        "y": 267,
+        "description": "Talk to <span class='npc'>[Kafra]</span> and warp to Payon."
+    },
+    {
+        "title": "Blacksmith (5/8)",
+        "map": "payon",
+        "x": 218,
+        "y": 238,
+        "description": "Talk to <span class='npc'>[Mayumi]</span>."
+    },
+    {
+        "title": "Blacksmith (6/8)",
+        "map": "payon",
+        "x": 289,
+        "y": 339,
+        "description": "Talk to <span class='npc'>[Kafra]</span> and choose warp to Zero."
+    },
+    {
+        "title": "Blacksmith (6/8)",
+        "map": "zero",
+        "x": 219,
+        "y": 288,
+        "description": "Talk to <span class='npc'>[Kafra]</span> and warp to Geffen."
+    },
+    {
+        "title": "Blacksmith (6/8)",
+        "map": "geffen",
+        "x": 230,
+        "y": 358,
+        "description": "Talk to <span class='npc'>[Kafra]</span> and warp to Al De Baran."
+    },
+    {
+        "title": "Blacksmith (6/8)",
+        "map": "aldebaran",
+        "x": 375,
+        "y": 333,
+        "description": "Talk to <span class='npc'>[Clause]</span>."
+    },
+    {
+        "title": "Blacksmith (7/8)",
+        "map": "aldebaran",
+        "x": 375,
+        "y": 333,
+        "description": "Talk to <span class='npc'>[Rudolph]</span> and complete his task.<br><span class='hint'>This cost 20.000 zeny to complete.</span>"
+    },
+    {
+        "title": "Blacksmith (7/8)",
+        "map": "aldebaran",
+        "x": 375,
+        "y": 333,
+        "description": "Talk to <span class='npc'>[Mayumi]</span> and complete her task.<br><span class='hint'>She wants a <span class='item'>[Piece of Cogwheel]</span> from Clock Tower. (see step 10-11)</span>"
+    },
+    {
+        "title": "Blacksmith (8/8)",
+        "map": "aldebaran",
+        "x": 375,
+        "y": 333,
+        "description": "Talk to <span class='npc'>[Clause]</span>. You are now a Blacksmith!"
+    },
+]
+
+var rogue_quest = [
+    {
+        "title": "Job Change",
+        "map": "morocc",
+        "x": 236,
+        "y": 457,
+        "description": "Go to Morocc and enter the portal at the center bottom of the map.<br><span class='hint'>You can use the boat to Lighthouse Island, Pharaos. If you do that, skip to step 5.</span>"
+    },
+    {
+        "title": "Job Change",
+        "map": "moc_fild12",
+        "x": 165,
+        "y": 463,
+        "description": "Enter the portal at the bottom of the map."
+    },
+    {
+        "title": "Job Change",
+        "map": "moc_fild18",
+        "x": 7,
+        "y": 278,
+        "description": "Enter the portal at the left side of the map."
+    },
+    {
+        "title": "Job Change",
+        "map": "cmd_fild09",
+        "x": -7,
+        "y": 264,
+        "description": "Enter the portal at the left side of the map."
+    },
+    {
+        "title": "Job Change",
+        "map": "cmd_fild07",
+        "x": 225,
+        "y": 339,
+        "description": "Enter the Rogue Base by walk down the stairs into the portal."
+    },
+    {
+        "title": "Job Change",
+        "description": "Keep walking down the stairs into the next portal."
+    },
+    {
+        "title": "Job Change",
+        "description": "Talk to <span class='npc'>[Kel]</span>"
+    },
+    {
+        "title": "Rogue (1/2)",
+        "description": "Go back up all the stairs until you exit the Rogue Base."
+    },
+    {
+        "title": "Rogue (1/2)",
+        "map": "cmd_fild07",
+        "x": 475,
+        "y": 320,
+        "description": "Enter the portal at the right side of the map.<br><span class='hint'>You can find and talk with <span class='npc'>[Ship's Captain]</span> and choose to sail to Alberta at the boat on the left side of the map. If you do that, skip to step 15.</span>"
+    },
+    {
+        "title": "Rogue (1/2)",
+        "map": "cmd_fild09",
+        "x": 465,
+        "y": 277,
+        "description": "Enter the portal at the right side of the map."
+    },
+    {
+        "title": "Rogue (1/2)",
+        "map": "moc_fild18",
+        "x": 180,
+        "y": -2,
+        "description": "Enter the portal at the top of the map."
+    },
+    {
+        "title": "Rogue (1/2)",
+        "map": "moc_fild12",
+        "x": 235,
+        "y": -10,
+        "description": "Enter Morocc city with the portal at the top of the map."
+    },
+    {
+        "title": "Rogue (1/2)",
+        "map": "morocc",
+        "x": 220,
+        "y": 328,
+        "description": "Find and talk with <span class='npc'>[Kafra]</span> and warp to Zero."
+    },
+    {
+        "title": "Rogue (1/2)",
+        "map": "zero",
+        "x": 219,
+        "y": 288,
+        "description": "Talk to <span class='npc'>[Kafra]</span> and choose warp to Alberta."
+    },
+    {
+        "title": "Rogue (1/2)",
+        "map": "alberta",
+        "x": 197,
+        "y": 388,
+        "description": "Use the <span class='item'>[Ink Ball]</span> at the Alberta Square and type in 'Kill Government!!' as message.<br><span class='hint'>Leaving the message empty seems to write the correct message automatically.<br>If you mess up the message, you can get more <span class='item'>[Ink Ball]</span> from killing <span class='monster'>[Shellfish]</span> at Lighthouse Island, Pharaos."
+    },
+    {
+        "title": "Rogue (1/2)",
+        "map": "alberta",
+        "x": 200,
+        "y": 375,
+        "description": "Talk to <span class='npc'>[Kafra]</span> and choose warp to Morocc.<br><span class='hint'>You can use the boat to Lighthouse Island, Pharaos. If you do that, skip to step 21.</span>"
+    },
+    {
+        "title": "Rogue (1/2)",
+        "map": "morocc",
+        "x": 236,
+        "y": 457,
+        "description": "Enter the portal at the center bottom of the map."
+    },
+    {
+        "title": "Rogue (1/2)",
+        "map": "moc_fild12",
+        "x": 165,
+        "y": 463,
+        "description": "Enter the portal at the bottom of the map."
+    },
+    {
+        "title": "Rogue (1/2)",
+        "map": "moc_fild18",
+        "x": 7,
+        "y": 278,
+        "description": "Enter the portal at the left side of the map."
+    },
+    {
+        "title": "Rogue (1/2)",
+        "map": "cmd_fild09",
+        "x": -7,
+        "y": 264,
+        "description": "Enter the portal at the left side of the map."
+    },
+    {
+        "title": "Rogue (1/2)",
+        "map": "cmd_fild07",
+        "x": 225,
+        "y": 339,
+        "description": "Enter the Rogue Base by walk down the stairs into the portal."
+    },
+    {
+        "title": "Rogue (1/2)",
+        "description": "Keep walking down the stairs into the next portal."
+    },
+    {
+        "title": "Rogue (1/2)",
+        "description": "Talk to <span class='npc'>[Kel]</span>"
+    },
+    {
+        "title": "Rogue (2/2)",
+        "description": "Go back up all the stairs until you exit the Rogue Base."
+    },
+    {
+        "title": "Rogue (2/2)",
+        "map": "cmd_fild07",
+        "x": 475,
+        "y": 320,
+        "description": "Enter the portal at the right side of the map.<br><span class='hint'>You can find and talk with <span class='npc'>[Ship's Captain]</span> and choose to sail to Zero at the boat on the left side of the map. If you do that, skip to step 30.</span>"
+    },
+    {
+        "title": "Rogue (2/2)",
+        "map": "cmd_fild09",
+        "x": 465,
+        "y": 277,
+        "description": "Enter the portal at the right side of the map."
+    },
+    {
+        "title": "Rogue (2/2)",
+        "map": "moc_fild18",
+        "x": 180,
+        "y": -2,
+        "description": "Enter the portal at the top of the map."
+    },
+    {
+        "title": "Rogue (2/2)",
+        "map": "moc_fild12",
+        "x": 235,
+        "y": -10,
+        "description": "Enter Morocc city with the portal at the top of the map."
+    },
+    {
+        "title": "Rogue (2/2)",
+        "map": "morocc",
+        "x": 220,
+        "y": 328,
+        "description": "Find and talk with <span class='npc'>[Kafra]</span> and warp to Zero."
+    },
+    {
+        "title": "Rogue (2/2)",
+        "map": "zero",
+        "x": 237,
+        "y": 293,
+        "description": "Use the <span class='item'>[Ink Ball]</span> at the Zero Square and type in 'Kill Government!!' as message.<br><span class='hint'>Leaving the message empty seems to write the correct message automatically.<br>If you mess up the message, you can get more <span class='item'>[Ink Ball]</span> from killing <span class='monster'>[Shellfish]</span> at Lighthouse Island, Pharaos.</span>"
+    },
+    {
+        "title": "Rogue (2/2)",
+        "map": "zero",
+        "x": 219,
+        "y": 288,
+        "description": "Talk to <span class='npc'>[Kafra]</span> and choose warp to Morocc.<br><span class='hint'>You can use the boat to Lighthouse Island, Pharaos. If you do that, skip to step 36.</span>"
+    },
+
+    {
+        "title": "Rogue (2/2)",
+        "map": "morocc",
+        "x": 236,
+        "y": 457,
+        "description": "Enter the portal at the center bottom of the map."
+    },
+    {
+        "title": "Rogue (2/2)",
+        "map": "moc_fild12",
+        "x": 165,
+        "y": 463,
+        "description": "Enter the portal at the bottom of the map."
+    },
+    {
+        "title": "Rogue (2/2)",
+        "map": "moc_fild18",
+        "x": 7,
+        "y": 278,
+        "description": "Enter the portal at the left side of the map."
+    },
+    {
+        "title": "Rogue (2/2)",
+        "map": "cmd_fild09",
+        "x": -7,
+        "y": 264,
+        "description": "Enter the portal at the left side of the map."
+    },
+    {
+        "title": "Rogue (2/2)",
+        "map": "cmd_fild07",
+        "x": 225,
+        "y": 339,
+        "description": "Enter the Rogue Base by walk down the stairs into the portal."
+    },
+    {
+        "title": "Rogue (2/2)",
+        "description": "Keep walking down the stairs into the next portal."
+    },
+    {
+        "title": "Rogue (2/2)",
+        "description": "Talk to <span class='npc'>[Kel]</span>. You are now a Rogue!"
+    },
+]

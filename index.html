@@ -42,14 +42,14 @@
                             <td class="crossed">Bard/Dancer</td>
                         </tr>
                         <tr>
-                            <td class="crossed">Merchant</td>
-                            <td class="crossed">Blacksmith</td>
+                            <td onclick="change_job('Merchant')">Merchant</td>
+                            <td onclick="change_job('Blacksmith')">Blacksmith</td>
                             <td class="crossed">Alchemist</td>
                         </tr>
                         <tr>
                             <td onclick="change_job('Thief')">Thief</td>
                             <td onclick="change_job('Assassin')">Assassin</td>
-                            <td class="crossed">Rogue</td>
+                            <td onclick="change_job('Rogue')">Rogue</td>
                         </tr>
                         <tr>
                             <td onclick="change_job('Acolyte')">Acolyte</td>
@@ -708,6 +708,24 @@
                     class_quest = assassin_quest
                     check_and_set_steps()
                     searchParams.set("job", "Assassin")
+                    searchParams.set("step", url_step)
+                    break
+                case "Rogue":
+                    class_quest = rogue_quest
+                    check_and_set_steps()
+                    searchParams.set("job", "Rogue")
+                    searchParams.set("step", url_step)
+                    break
+                case "Merchant":
+                    class_quest = merchant_quest
+                    check_and_set_steps()
+                    searchParams.set("job", "Merchant")
+                    searchParams.set("step", url_step)
+                    break
+                case "Blacksmith":
+                    class_quest = blacksmith_quest
+                    check_and_set_steps()
+                    searchParams.set("job", "Blacksmith")
                     searchParams.set("step", url_step)
                     break
                 default:
