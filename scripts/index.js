@@ -1576,3 +1576,92 @@ var rogue_quest = [
         "description": "Talk to <span class='npc'>[Kel]</span>. You are now a Rogue!"
     },
 ]
+
+var monk_quest = [
+    {
+        "title": "Job Change",
+        "map": "aldebaran",
+        "x": 237,
+        "y": 439,
+        "description": "Go to Al De Baran and enter the portal at the bottom of the map."
+    },
+    {
+        "title": "Job Change",
+        "map": "mjolnir_12",
+        "x": 264,
+        "y": 466,
+        "description": "Go to the bottom of the map again."
+    },
+    {
+        "title": "Job Change",
+        "map": "mjolnir_05",
+        "x": 281,
+        "y": 471,
+        "description": "Go to the bottom of the map (again)."
+    },
+    {
+        "title": "Job Change",
+        "map": "mjolnir_10",
+        "x": 467,
+        "y": 220,
+        "description": "Go to the portal on the right side of the map."
+    },
+    {
+        "title": "Job Change",
+        "map": "mjolnir_11",
+        "x": 203,
+        "y": 465,
+        "description": "Go to the portal at the bottom of the map."
+    },
+    {
+        "title": "Job Change",
+        "map": "prt_fild02",
+        "x": 473,
+        "y": 44,
+        "description": "Go to the portal on the right side of the map."
+    },
+    {
+        "title": "Job Change",
+        "map": "prt_fild03",
+        "x": 470,
+        "y": 50,
+        "description": "Go to the portal on the right side of the map."
+    },
+    {
+        "title": "Job Change",
+        "map": "prt_monk",
+        "x": 295,
+        "y": 357,
+        "description": "Find and talk to <span class='npc'>[Last Monk]</span>."
+    },
+    {
+        "title": "Monk (1/2)",
+        "map": "prt_monk",
+        "x": 295,
+        "y": 334,
+        "description": "Enter the temple portal."
+    },
+    {
+        "title": "Monk (1/2)",
+        "description": "Inside you will find <span class='npc'>[Krishna Memory]</span>, talk with him and pass his test."
+    },
+    {
+        "title": "Monk (1/2)",
+        "description": "Walk to the left and enter the portal. Inside that room, you will find <span class='npc'>[Yndra's Memory]</span>. Talk with him and pass his test.<br><span class='hint'>The order is 4,1,3,2.</span>"
+    },
+    {
+        "title": "Monk (1/2)",
+        "description": "Leave the room and walk to the portal on the right side. Inside that room, you will find <span class='npc'>[Brahma Memory]</span>. Talk with him and pass his test.<br><span class='hint'>The order is Magician, Acolyte, Merchant, Thief and Swordsman.</span>"
+    },
+    {
+        "title": "Monk (2/2)",
+        "description": "Now that you have passed all 3 tests, exit the temple."
+    },
+    {
+        "title": "Monk (2/2)",
+        "map": "prt_monk",
+        "x": 295,
+        "y": 357,
+        "description": "Talk to <span class='npc'>[Last Monk]</span>. You are now a Monk!"
+    },
+]

@@ -54,7 +54,7 @@
                         <tr>
                             <td onclick="change_job('Acolyte')">Acolyte</td>
                             <td onclick="change_job('Priest')">Priest</td>
-                            <td class="crossed">Monk</td>
+                            <td onclick="change_job('Monk')">Monk</td>
                         </tr>
                     </table>
 
@@ -672,6 +672,12 @@
                     class_quest = priest_quest
                     check_and_set_steps()
                     searchParams.set("job", "Priest")
+                    searchParams.set("step", url_step)
+                    break
+                case "Monk":
+                    class_quest = monk_quest
+                    check_and_set_steps()
+                    searchParams.set("job", "Monk")
                     searchParams.set("step", url_step)
                     break
                 case "Magician":
