@@ -34,7 +34,7 @@
                         <tr>
                             <td onclick="change_job('Magician')">Magician</td>
                             <td onclick="change_job('Wizard')">Wizard</td>
-                            <td class="crossed">Sage</td>
+                            <td onclick="change_job('Sage')">Sage</td>
                         </tr>
                         <tr>
                             <td onclick="change_job('Archer')">Archer</td>
@@ -44,7 +44,7 @@
                         <tr>
                             <td onclick="change_job('Merchant')">Merchant</td>
                             <td onclick="change_job('Blacksmith')">Blacksmith</td>
-                            <td class="crossed">Alchemist</td>
+                            <td onclick="change_job('Alchemist')">Alchemist</td>
                         </tr>
                         <tr>
                             <td onclick="change_job('Thief')">Thief</td>
@@ -692,6 +692,12 @@
                     searchParams.set("job", "Wizard")
                     searchParams.set("step", url_step)
                     break
+                case "Sage":
+                    class_quest = sage_quest
+                    check_and_set_steps()
+                    searchParams.set("job", "Sage")
+                    searchParams.set("step", url_step)
+                    break
                 case "Archer":
                     class_quest = archer_quest
                     check_and_set_steps()
@@ -732,6 +738,12 @@
                     class_quest = blacksmith_quest
                     check_and_set_steps()
                     searchParams.set("job", "Blacksmith")
+                    searchParams.set("step", url_step)
+                    break
+                case "Alchemist":
+                    class_quest = alchemist_quest
+                    check_and_set_steps()
+                    searchParams.set("job", "Alchemist")
                     searchParams.set("step", url_step)
                     break
                 default:

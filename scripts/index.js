@@ -1023,7 +1023,7 @@ var assassin_quest = [
 var merchant_quest = [
     {
         "title": "Quest Merchant - (1/6)",
-        "description": "Exit the house where you talked with <span class='npc'>[Violet]</span>."
+        "description": "After you have talked with <span class='npc'>[Violet]</span>, exit the house."
     },
     {
         "title": "Quest Merchant - (1/6)",
@@ -1115,7 +1115,7 @@ var merchant_quest = [
     },
     {
         "title": "Quest Merchant - (6/6)",
-        "description": "Talk with <span class='npc'>[Violet]</span>. You are now a Merchant!"
+        "description": "Talk with <span class='npc'>[Violet]</span> and watch the cutscene. You are now a Merchant!"
     },
 ]
 
@@ -1125,14 +1125,14 @@ var blacksmith_quest = [
         "map": "zero",
         "x": 415,
         "y": 172,
-        "description": "Talk with the <span class='npc'>[Train Engineer]</span> in Zero city and choose Einbroch as destination."
+        "description": "Talk with the <span class='npc'>[Train Engineer]</span> in Zero city and choose Einbroch as destination.<br><span class='hint'>You can also travel to Einbroch with the airship in Izlude, Hugel or Yuno.<br>The air in Einbroch is toxic and will slowly damage you. Item such as <span class='item'>[Flu Mask]</span> can be used to protect against it.</span>"
     },
     {
         "title": "Job Change",
         "map": "einbroch",
         "x": 175,
         "y": 172,
-        "description": "Enter the house.<br><span class='hint'>The air in Einbroch is toxic and will slowly damage you. Item such as <span class='item'>[Flu Mask]</span> can be used to protect against it.</span>"
+        "description": "Enter the house."
     },
     {
         "title": "Job Change",
@@ -1663,5 +1663,216 @@ var monk_quest = [
         "x": 295,
         "y": 357,
         "description": "Talk to <span class='npc'>[Last Monk]</span>. You are now a Monk!"
+    },
+]
+
+var sage_quest = [
+    {
+        "title": "Job Change",
+        "map": "yuno",
+        "x": 84,
+        "y": 66,
+        "description": "Travel to Yuno and enter the Sage Castle.<br><span class='hint'>You can use the airships to travel to Yuno. The airships are found in Izlude, Hugel and Einbroch.</span>"
+    },
+    {
+        "title": "Job Change",
+        "description": "Walk left until you get to the crossroad in the next room. Walk up all the way until you find <span class='npc'>[Oberin]</span> and talk to him."
+    },
+    {
+        "title": "Sage (1/5)",
+        "description": "Walk down to the crossroad and walk left and you will find <span class='npc'>[Oberin]</span> standing in the middle of the room, talk to him."
+    },
+    {
+        "title": "Sage (1/5)",
+        "description": "Solve the puzzle.<br><span class='hint'>The order is based on the Greek names of the planets going from closest to the sun to the furthest away. After you solved the puzzle, talk to him again.<br><br><img src='./images/sage_planets_order.jpg' alt='sage_puzzle' width='512px' height='512px'><br>1: Hermes<br>2: Aphrodite<br>3: Gaia (Geb)<br>4: Ares<br>5: Zeus<br>6: Cronus<br>7: Uranus<br>8: Poseidon</span>"
+    },
+    {
+        "title": "Sage (2/5)",
+        "description": "Walk all the way to the right and exit the Sage Castle."
+    },
+    {
+        "title": "Sage (2/5)",
+        "map": "yuno",
+        "x": 47,
+        "y": 206,
+        "description": "Talk to <span class='npc'>[Airplane Captain]</span> and travel to Izlude."
+    },
+    {
+        "title": "Sage (2/5)",
+        "map": "izlude",
+        "x": 247,
+        "y": 304,
+        "description": "Use <span class='npc'>[Kafra]</span> and warp to Morocc."
+    },
+    {
+        "title": "Sage (2/5)",
+        "map": "morocc",
+        "x": 347,
+        "y": 243,
+        "description": "Talk to <span class='npc'>[Sage Augustine]</span>."
+    },
+    {
+        "title": "Sage (3/5)",
+        "map": "morocc",
+        "x": 220,
+        "y": 328,
+        "description": "Talk with <span class='npc'>[Kafra]</span> and warp to Zero."
+    },
+    {
+        "title": "Sage (3/5)",
+        "map": "zero",
+        "x": 238,
+        "y": -5,
+        "description": "Walk to the portal at the top of the map."
+    },
+    {
+        "title": "Sage (3/5)",
+        "map": "zero_field",
+        "x": 174,
+        "y": 175,
+        "description": "Find and talk to <span class='npc'>[Observatory Guide]</span> at the Zero Observatory and do a Stargaze.<br><span class='hint'>The NPC and the Quest say different times (17:00-23:00 and 18:00-23:00). I've been able to stargaze at a lot of different times, might be bugged or always available during beta.</span>"
+    },
+    {
+        "title": "Sage (4/5)",
+        "map": "zero_field",
+        "x": 236,
+        "y": 466,
+        "description": "Head back to Zero city at the bottom of the Zero Florest map."
+    },
+    {
+        "title": "Sage (4/5)",
+        "map": "zero",
+        "x": 219,
+        "y": 288,
+        "description": "Talk to <span class='npc'>[Kafra]</span> and warp to Morocc."
+    },
+    {
+        "title": "Sage (4/5)",
+        "map": "morocc",
+        "x": 347,
+        "y": 243,
+        "description": "Talk to <span class='npc'>[Sage Augustine]</span>."
+    },
+    {
+        "title": "Sage (5/5)",
+        "map": "morocc",
+        "x": 220,
+        "y": 328,
+        "description": "Talk with <span class='npc'>[Kafra]</span> and warp to Izlude."
+    },
+    {
+        "title": "Sage (5/5)",
+        "map": "izlude",
+        "x": 380,
+        "y": 369,
+        "description": "Talk to <span class='npc'>[Airplane Captain]</span> and take the airplane to Yuno."
+    },
+    {
+        "title": "Sage (5/5)",
+        "map": "yuno",
+        "x": 84,
+        "y": 66,
+        "description": "Enter the Sage Castle."
+    },
+    {
+        "title": "Sage (5/5)",
+        "description": "Walk all the way to the left and talk with <span class='npc'>[Oberin]</span>. You are now a Sage!"
+    },
+]
+
+var alchemist_quest = [
+    {
+        "title": "Job Change",
+        "map": "zero",
+        "x": 415,
+        "y": 172,
+        "description": "Talk with the <span class='npc'>[Train Engineer]</span> in Zero city and choose Einbroch as destination.<br><span class='hint'>You can also travel to Einbroch with the airship in Izlude, Hugel or Yuno.<br>The air in Einbroch is toxic and will slowly damage you. Item such as <span class='item'>[Flu Mask]</span> can be used to protect against it.</span>"
+    },
+    {
+        "title": "Job Change",
+        "map": "einbroch",
+        "x": 53,
+        "y": 422,
+        "description": "Find and enter the research laboratory at the bottom left of the map."
+    },
+    {
+        "title": "Job Change",
+        "description": "Inside the research laboratory, talk to <span class='npc'>[Fay]</span> and choose to become a alchemist."
+    },
+    {
+        "title": "Alchemist (1/5)",
+        "description": "Exit the research laboratory."
+    },
+    {
+        "title": "Alchemist (1/5)",
+        "map": "einbroch",
+        "x": 403,
+        "y": 327,
+        "description": "Find the Einbroch prison and talk to <span class='npc'>[Prison Guard]</span> outside."
+    },
+    {
+        "title": "Alchemist (1/5)",
+        "description": "Inside the prison, walk to the end of the room and you will find a empty prison cell with boxes. Around the 3 darker boxes <span class='npc'>[Alchemy Mark]</span> can be found, press it."
+    },
+    {
+        "title": "Alchemist (1/5)",
+        "description": "Talk to the <span class='npc'>[Prison Guard]</span> inside the prison."
+    },
+    {
+        "title": "Alchemist (1/5)",
+        "description": "Talk to the <span class='npc'>[Observatory Guide]</span> inside the first prison cell. Talk with him again."
+    },
+    {
+        "title": "Alchemist (1/5)",
+        "description": "Go back to the end of the room and you will now find <span class='npc'>[Blood Stains]</span> on the stack of normal boxes inside the prison cell. Press it."
+    },
+    {
+        "title": "Alchemist (1/5)",
+        "description": "Talk to the <span class='npc'>[Prison Guard]</span>."
+    },
+    {
+        "title": "Alchemist (2/5)",
+        "map": "einbroch",
+        "x": 53,
+        "y": 422,
+        "description": "Go back to the research laboratory at the bottom left of the map."
+    },
+    {
+        "title": "Alchemist (2/5)",
+        "description": "Inside the research laboratory, talk to <span class='npc'>[Fay]</span>."
+    },
+    {
+        "title": "Alchemist (3/5)",
+        "description": "Exit the research laboratory."
+    },
+    {
+        "title": "Alchemist (4/5)",
+        "map": "einbroch",
+        "x": 403,
+        "y": 327,
+        "description": "Go back to the Einbroch prison again. <span class='npc'>[Fay]</span> is standing outside, go near her and choose to sneak into the prison."
+    },
+    {
+        "title": "Alchemist (4/5)",
+        "description": "Inside the prison, talk to <span class='npc'>[Observatory Guide]</span>."
+    },
+    {
+        "title": "Alchemist (4/5)",
+        "description": "Talk to <span class='npc'>[Observatory Guide]</span> again and give him a <span class='item'>[Meat]</span>.<br><span class='hint'>Trying to go outside seems to get you stuck in the loading and forces you to restart the game. When you join back, you will be forced to enter the prison again. If you don't have <span class='item'>[Meat]</span> on you, you will need to use the skill <span class='skill'>[Return]</span>.<br><span class='item'>[Meat]</span> can be bought in Izlude from the <span class='npc'>[Butcher]</span> in the center of the city.</span>"
+    },
+    {
+        "title": "Alchemist (5/5)",
+        "description": "Exit the prison."
+    },
+    {
+        "title": "Alchemist (5/5)",
+        "map": "einbroch",
+        "x": 53,
+        "y": 422,
+        "description": "Go back to the research laboratory at the bottom left of the map."
+    },
+    {
+        "title": "Alchemist (5/5)",
+        "description": "Inside the research laboratory, talk to <span class='npc'>[Fay]</span>. You are now a Alchemist!"
     },
 ]
