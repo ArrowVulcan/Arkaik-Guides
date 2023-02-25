@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
     <title>Arkaik Fansite | Home</title>
     <link rel="stylesheet" href="./index.css">
 </head>
@@ -29,7 +30,7 @@
                         <tr>
                             <td onclick="change_job('Swordsman')">Swordsman</td>
                             <td onclick="change_job('Knight')">Knight</td>
-                            <td class="crossed">Crusader</td>
+                            <td onclick="change_job('Crusader')">Crusader</td>
                         </tr>
                         <tr>
                             <td onclick="change_job('Magician')">Magician</td>
@@ -39,7 +40,7 @@
                         <tr>
                             <td onclick="change_job('Archer')">Archer</td>
                             <td onclick="change_job('Hunter')">Hunter</td>
-                            <td class="crossed">Bard/Dancer</td>
+                            <td><span onclick="change_job('Bard')">Bard</span><hr><span onclick="change_job('Dancer')">Dancer</span></td>
                         </tr>
                         <tr>
                             <td onclick="change_job('Merchant')">Merchant</td>
@@ -75,6 +76,12 @@
                     </table>
 
                 </div>
+
+            </div>
+
+            <div id="nav-timer" class="nav-button" onclick="page_switcher('Timer')">
+
+                <p>Timer</p>
 
             </div>
 
@@ -128,13 +135,183 @@
 
         </div>
 
+        <div id="boss-timer-wrapper">
+
+            <h1 class="guide-title">Boss Timers</h1>
+
+            <div id="mute-sound" onclick="set_sound()">Sound: <span id="sound-mute-text">On</span></div>
+
+            <div id="boss-list-wrapper">
+
+                <div id="timer-blocker-wrapper">
+
+                    <div id="timer-setter">
+
+                        <div class="timer-row">
+                            <span onclick="set_timer(1, 'hour')" class="timer-button">+</span>
+                            <p id="timer-hour">0</p>
+                            <span onclick="set_timer(-1, 'hour')" class="timer-button">-</span>
+                        </div>
+
+                        <div class="timer-row">
+                            <p>:</p>
+                        </div>
+
+                        <div class="timer-row">
+                            <span onclick="set_timer(1, 'minute')" class="timer-button">+</span>
+                            <p id="timer-minute">0</p>
+                            <span onclick="set_timer(-1, 'minute')" class="timer-button">-</span>
+                        </div>
+
+                        <div class="timer-row">
+                            <span onclick="set_timer(1, 'second')" class="timer-button">+</span>
+                            <p id="timer-second">0</p>
+                            <span onclick="set_timer(-1, 'second')" class="timer-button">-</span>
+                        </div>
+
+                    </div>
+
+                    <div onmousedown="hide_timer_blocker()" id="timer-blocker"></div>
+
+                </div>
+
+                <div class="boss-wrapper" onmousedown="boss_timer_show(this, 'Osiris')">
+                    <h2>Osiris</h2>
+                    <img src="./images/portraits/1038.jpg" alt="osiris">
+                    <div class="boss-time" data-name="Osiris">0:00</div>
+                </div>
+
+                <div class="boss-wrapper" onmousedown="boss_timer_show(this, 'Baphomet')">
+                    <h2>Baphomet</h2>
+                    <img src="./images/portraits/1039.jpg" alt="baphomet">
+                    <div class="boss-time" data-name="Baphomet">0:00</div>
+                </div>
+
+                <div class="boss-wrapper" onmousedown="boss_timer_show(this, 'Doppelganger')">
+                    <h2>Doppelganger</h2>
+                    <img src="./images/portraits/1046.jpg" alt="doppelganger">
+                    <div class="boss-time" data-name="Doppelganger">0:00</div>
+                </div>
+
+                <div class="boss-wrapper" onmousedown="boss_timer_show(this, 'Mistress')">
+                    <h2>Mistress</h2>
+                    <img src="./images/portraits/1059.jpg" alt="mistress">
+                    <div class="boss-time" data-name="Mistress">0:00</div>
+                </div>
+
+                <div class="boss-wrapper" onmousedown="boss_timer_show(this, 'Golden Thief Bug')">
+                    <h2>Golden Thief Bug</h2>
+                    <img src="./images/portraits/1086.jpg" alt="golden_thief_bug">
+                    <div class="boss-time" data-name="Golden Thief Bug">0:00</div>
+                </div>
+
+                <div class="boss-wrapper" onmousedown="boss_timer_show(this, 'Drake')">
+                    <h2>Drake</h2>
+                    <img src="./images/portraits/1112.jpg" alt="drake">
+                    <div class="boss-time" data-name="Drake">0:00</div>
+                </div>
+
+                <div class="boss-wrapper" onmousedown="boss_timer_show(this, 'Eddga')">
+                    <h2>Eddga</h2>
+                    <img src="./images/portraits/1115.jpg" alt="eddga">
+                    <div class="boss-time" data-name="Eddga">0:00</div>
+                </div>
+
+                <div class="boss-wrapper" onmousedown="boss_timer_show(this, 'Maya')">
+                    <h2>Maya</h2>
+                    <img src="./images/portraits/1147.jpg" alt="maya">
+                    <div class="boss-time" data-name="Maya">0:00</div>
+                </div>
+
+                <div class="boss-wrapper" onmousedown="boss_timer_show(this, 'Moonlight Flower')">
+                    <h2>Moonlight Flower</h2>
+                    <img src="./images/portraits/1150.jpg" alt="moonlight_flower">
+                    <div class="boss-time" data-name="Moonlight Flower">0:00</div>
+                </div>
+
+                <div class="boss-wrapper" onmousedown="boss_timer_show(this, 'Pharaoh')">
+                    <h2>Pharaoh</h2>
+                    <img src="./images/portraits/1157.jpg" alt="pharaoh">
+                    <div class="boss-time" data-name="Pharaoh">0:00</div>
+                </div>
+
+                <div class="boss-wrapper" onmousedown="boss_timer_show(this, 'Phreeoni')">
+                    <h2>Phreeoni</h2>
+                    <img src="./images/portraits/1159.jpg" alt="phreeoni">
+                    <div class="boss-time" data-name="Phreeoni">0:00</div>
+                </div>
+
+                <div class="boss-wrapper" onmousedown="boss_timer_show(this, 'Orc Lord')">
+                    <h2>Orc Lord</h2>
+                    <img src="./images/portraits/1190.jpg" alt="orc_lord">
+                    <div class="boss-time" data-name="Orc Lord">0:00</div>
+                </div>
+
+                <div class="boss-wrapper" onmousedown="boss_timer_show(this, 'Turtle General')">
+                    <h2>Turtle General</h2>
+                    <img src="./images/portraits/1312.jpg" alt="turtle_general">
+                    <div class="boss-time" data-name="Turtle General">0:00</div>
+                </div>
+
+                <div class="boss-wrapper" onmousedown="boss_timer_show(this, 'Lord of Death')">
+                    <h2>Lord of Death</h2>
+                    <img src="./images/portraits/1373.jpg" alt="lord_of_death">
+                    <div class="boss-time" data-name="Lord of Death">0:00</div>
+                </div>
+
+                <div class="boss-wrapper" onmousedown="boss_timer_show(this, 'Dracula')">
+                    <h2>Dracula</h2>
+                    <img src="./images/portraits/1389.jpg" alt="dracula">
+                    <div class="boss-time" data-name="Dracula">0:00</div>
+                </div>
+
+                <div class="boss-wrapper" onmousedown="boss_timer_show(this, 'Amon Ra')">
+                    <h2>Amon Ra</h2>
+                    <img src="./images/portraits/1511.jpg" alt="amon_ra">
+                    <div class="boss-time" data-name="Amon Ra">0:00</div>
+                </div>
+
+                <div class="boss-wrapper" onmousedown="boss_timer_show(this, 'Tao Gunka')">
+                    <h2>Tao Gunka</h2>
+                    <img src="./images/portraits/1583.jpg" alt="tao_gunka">
+                    <div class="boss-time" data-name="Tao Gunka">0:00</div>
+                </div>
+
+                <div class="boss-wrapper" onmousedown="boss_timer_show(this, 'RSX 0806')">
+                    <h2>RSX 0806</h2>
+                    <img src="./images/portraits/1623.jpg" alt="rsx_0806">
+                    <div class="boss-time" data-name="RSX 0806">0:00</div>
+                </div>
+
+                <div class="boss-wrapper" onmousedown="boss_timer_show(this, 'Lady Tanee')">
+                    <h2>Lady Tanee</h2>
+                    <img src="./images/portraits/1688.jpg" alt="lady_tanee">
+                    <div class="boss-time" data-name="Lady Tanee">0:00</div>
+                </div>
+
+                <div class="boss-wrapper" onmousedown="boss_timer_show(this, 'Giant Octopus')">
+                    <h2>Giant Octopus</h2>
+                    <img src="./images/portraits/2194.jpg" alt="giant_octopus">
+                    <div class="boss-time" data-name="Giant Octopus">0:00</div>
+                </div>
+
+                <div class="boss-wrapper" onmousedown="boss_timer_show(this, 'Kraken')">
+                    <h2>Kraken</h2>
+                    <img src="./images/portraits/2202.jpg" alt="kraken">
+                    <div class="boss-time" data-name="Kraken">0:00</div>
+                </div>
+
+            </div>
+
+        </div>
+
         <div id="blacksmith-mining-wrapper">
 
             <div id="blacksmith-intro-wrapper">
 
-                <h1 id="blacksmith-mining-guide-title">Blacksmith Mining/Refinement/Crafting Guide</h1>
+                <h1 class="guide-title">Blacksmith Mining/Refinement/Crafting Guide</h1>
 
-                <h2 id="blacksmith-refinement-title">Mining</h2>
+                <h2 class="guide-title">Mining</h2>
 
                 <p>The Blacksmith job have two different skill points. One is the normal and the other is for mining.</p>
                 <p>All mining skills have a tiny icon <span class="mini-icon"><img src="./images/mining_icon.jpg" alt="mining"></span> at the bottom right corner.</p>
@@ -208,7 +385,7 @@
 
             <div id="blacksmith-refinement-wrapper">
 
-                <h2 id="blacksmith-refinement-title">Item Refinement</h2>
+                <h2 class="guide-title">Item Refinement</h2>
 
                 <div class="skill-info">
                     <img src="./images/skills/skill_refining_scroll.jpg" alt="refining_scroll">
@@ -254,7 +431,7 @@
 
             <div id="blacksmith-weapon-crafting-wrapper">
 
-                <h2 id="blacksmith-weapon-crafting-title">Weapon Crafting</h2>
+                <h2 class="guide-title">Weapon Crafting</h2>
 
                 <h3>Axes</h3>
                 <br>
@@ -542,12 +719,17 @@
 
         let step = 0
 
+        let timer_time = 0
+        let timer_boss = ""
+        let timer_sound = true
+
         let class_quest = swordsman_quest
 
         let max_steps = class_quest.length - 1
 
         let main_wrapper = document.getElementById("main-wrapper")
         let quest_wrapper = document.getElementById("quest-wrapper")
+        let boss_timer_wrapper = document.getElementById("boss-timer-wrapper")
         let blacksmith_mining_wrapper = document.getElementById("blacksmith-mining-wrapper")
         let title = document.getElementById("map-title")
         let job_title = document.getElementById("job-title")
@@ -609,6 +791,116 @@
 
         }
 
+        function set_sound(){
+
+            timer_sound = !timer_sound
+
+            let txt = document.getElementById("sound-mute-text")
+            txt.innerHTML = timer_sound ? "On" : "Off"
+
+        }
+
+        function boss_timer_show(e, mvp){
+
+            let blocker_wrapper = document.getElementById("timer-blocker-wrapper")
+            blocker_wrapper.style.display = "flex"
+
+            timer_boss = mvp
+
+            let hour = document.getElementById("timer-hour")
+            let min = document.getElementById("timer-minute")
+            let sec = document.getElementById("timer-second")
+
+            hour.innerHTML = e.lastElementChild.innerHTML[0]
+            min.innerHTML = e.lastElementChild.innerHTML[2]
+            sec.innerHTML = e.lastElementChild.innerHTML[3]
+
+            timer_time = hour.innerHTML + ":" + min.innerHTML + sec.innerHTML
+
+            e.classList.remove("ready")
+
+        }
+
+        function hide_timer_blocker(){
+         
+            let blocker_wrapper = document.getElementById("timer-blocker-wrapper")
+            blocker_wrapper.style.display = "none"
+
+            document.querySelectorAll(".boss-time").forEach(function(e){
+                if(e.dataset.name == timer_boss){
+                    e.innerHTML = timer_time
+                }
+            })
+            
+        }
+
+        function set_timer(val, time){
+            
+            let hour = document.getElementById("timer-hour")
+            let min = document.getElementById("timer-minute")
+            let sec = document.getElementById("timer-second")
+
+            if(time == "hour"){
+
+                if(val == 1){
+
+
+                    if(parseInt(hour.innerHTML) < 9){
+                        hour.innerHTML = parseInt(hour.innerHTML) + val
+                    }
+
+                }else{
+
+                    if(parseInt(hour.innerHTML) > 0){
+                        hour.innerHTML = parseInt(hour.innerHTML) + val
+                    }
+
+                }
+
+            }
+
+            if(time == "minute"){
+
+                if(val == 1){
+
+
+                    if(parseInt(min.innerHTML) < 9){
+                        min.innerHTML = parseInt(min.innerHTML) + val
+                    }
+
+                }else{
+
+                    if(parseInt(min.innerHTML) > 0){
+                        min.innerHTML = parseInt(min.innerHTML) + val
+                    }
+
+                }
+
+            }
+
+            if(time == "second"){
+
+                if(val == 1){
+
+
+                    if(parseInt(sec.innerHTML) < 9){
+                        sec.innerHTML = parseInt(sec.innerHTML) + val
+                    }
+
+                }else{
+
+                    if(parseInt(sec.innerHTML) > 0){
+                        sec.innerHTML = parseInt(sec.innerHTML) + val
+                    }
+
+                }
+
+            }
+
+            timer_time = hour.innerHTML + ":" + min.innerHTML + sec.innerHTML
+
+        }
+
         function update_url(searchParams, arg_step){
 
             //console.log(searchParams.get("job"), searchParams.get("guide"), arg_step)
@@ -626,6 +918,10 @@
                 new_url = get_url + "?&guide=" + searchParams.get("guide")
             }
 
+            if(searchParams.get("timer")){
+                new_url = get_url + "?&timer=" + searchParams.get("timer")
+            }
+
             history.pushState({}, null, new_url)
 
         }
@@ -636,6 +932,7 @@
             const searchParams = new URLSearchParams(paramsString)
 
             searchParams.delete("guide")
+            searchParams.delete("timer")
 
             function check_and_set_steps(){
 
@@ -652,103 +949,68 @@
             switch(job){
                 case "Swordsman":
                     class_quest = swordsman_quest
-                    check_and_set_steps()
-                    searchParams.set("job", "Swordsman")
-                    searchParams.set("step", url_step)
                     break
                 case "Knight":
                     class_quest = knight_quest
-                    check_and_set_steps()
-                    searchParams.set("job", "Knight")
-                    searchParams.set("step", url_step)
+                    break
+                case "Crusader":
+                    class_quest = crusader_quest
                     break
                 case "Acolyte":
                     class_quest = acolyte_quest
-                    check_and_set_steps()
-                    searchParams.set("job", "Acolyte")
-                    searchParams.set("step", url_step)
                     break
                 case "Priest":
                     class_quest = priest_quest
-                    check_and_set_steps()
-                    searchParams.set("job", "Priest")
-                    searchParams.set("step", url_step)
                     break
                 case "Monk":
                     class_quest = monk_quest
-                    check_and_set_steps()
-                    searchParams.set("job", "Monk")
-                    searchParams.set("step", url_step)
                     break
                 case "Magician":
                     class_quest = magician_quest
-                    check_and_set_steps()
-                    searchParams.set("job", "Magician")
-                    searchParams.set("step", url_step)
                     break
                 case "Wizard":
                     class_quest = wizard_quest
-                    check_and_set_steps()
-                    searchParams.set("job", "Wizard")
-                    searchParams.set("step", url_step)
                     break
                 case "Sage":
                     class_quest = sage_quest
-                    check_and_set_steps()
-                    searchParams.set("job", "Sage")
-                    searchParams.set("step", url_step)
                     break
                 case "Archer":
                     class_quest = archer_quest
-                    check_and_set_steps()
-                    searchParams.set("job", "Archer")
-                    searchParams.set("step", url_step)
                     break
                 case "Hunter":
                     class_quest = hunter_quest
-                    check_and_set_steps()
-                    searchParams.set("job", "Hunter")
-                    searchParams.set("step", url_step)
+                    break
+                case "Bard":
+                    class_quest = bard_quest
+                    break
+                case "Dancer":
+                    class_quest = dancer_quest
                     break
                 case "Thief":
                     class_quest = thief_quest
-                    check_and_set_steps()
-                    searchParams.set("job", "Thief")
-                    searchParams.set("step", url_step)
                     break
                 case "Assassin":
                     class_quest = assassin_quest
-                    check_and_set_steps()
-                    searchParams.set("job", "Assassin")
-                    searchParams.set("step", url_step)
                     break
                 case "Rogue":
                     class_quest = rogue_quest
-                    check_and_set_steps()
-                    searchParams.set("job", "Rogue")
-                    searchParams.set("step", url_step)
                     break
                 case "Merchant":
                     class_quest = merchant_quest
-                    check_and_set_steps()
-                    searchParams.set("job", "Merchant")
-                    searchParams.set("step", url_step)
                     break
                 case "Blacksmith":
                     class_quest = blacksmith_quest
-                    check_and_set_steps()
-                    searchParams.set("job", "Blacksmith")
-                    searchParams.set("step", url_step)
                     break
                 case "Alchemist":
                     class_quest = alchemist_quest
-                    check_and_set_steps()
-                    searchParams.set("job", "Alchemist")
-                    searchParams.set("step", url_step)
                     break
                 default:
                     return
             }
+
+            check_and_set_steps()
+            searchParams.set("job", job)
+            searchParams.set("step", url_step)
 
             document.title = "Arkaik Fansite | Job Change"
             update_url(searchParams, url_step)
@@ -774,7 +1036,8 @@
             const searchParams = new URLSearchParams(paramsString)
 
             searchParams.delete("job")
-
+            searchParams.delete("timer")
+            
             document.title = "Arkaik Fansite | Guide"
 
             switch(arg){
@@ -789,9 +1052,29 @@
 
         }
 
+        function page_switcher(arg){
+
+            hide_wrappers()
+
+            const paramsString = window.location.href
+            const searchParams = new URLSearchParams(paramsString)
+
+            searchParams.delete("job")
+            searchParams.delete("guide")
+
+            document.title = "Arkaik Fansite | Timer"
+
+            boss_timer_wrapper.style.display = "block"
+            searchParams.set("timer", "true")
+
+            update_url(searchParams)
+
+        }
+
         function hide_wrappers(){
             main_wrapper.style.display = "none"
             quest_wrapper.style.display = "none"
+            boss_timer_wrapper.style.display = "none"
             blacksmith_mining_wrapper.style.display = "none"
         }
 
@@ -832,6 +1115,7 @@
 
             const params_job = searchParams.get("job")
             const params_guide = searchParams.get("guide")
+            const params_timer = searchParams.get("timer")
             const url_step = parseInt(searchParams.get("step"))
 
             if(params_job){
@@ -852,9 +1136,61 @@
 
             }
 
+            if(params_timer){
+
+                page_switcher('Timer')
+                
+            }
+
         }
 
         setup()
+
+        setInterval(function(){
+
+            function play_sound(){
+                let audio = new Audio("./sound/st_mvp.wav")
+                audio.volume = 0.1
+                audio.play()
+            }
+
+            document.querySelectorAll(".boss-time").forEach(function(e){
+
+                let hour = e.innerHTML[0]
+                let min = e.innerHTML[2]
+                let sec = e.innerHTML[3]
+
+                if(sec > 0){
+                    
+                    sec -= 1
+
+                    if(hour == 0 && min == 0 && sec == 0){
+                        if(timer_sound){ play_sound() }
+                        e.parentElement.classList.add("ready")
+                    }
+
+                }else{
+
+                    if(min > 0){
+                        min -= 1
+                        sec = 9
+                    }else{
+
+                        if(hour > 0){
+                            hour -= 1
+                            min = 5
+                            sec = 9
+                        }
+
+                    }
+
+                }
+
+                e.innerHTML = hour + ":" + min + sec
+                
+            })
+
+        }, 60000)
 
     </script>
     

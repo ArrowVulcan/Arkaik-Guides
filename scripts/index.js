@@ -1876,3 +1876,204 @@ var alchemist_quest = [
         "description": "Inside the research laboratory, talk to <span class='npc'>[Fay]</span>. You are now a Alchemist!"
     },
 ]
+
+var bard_quest = [
+    {
+        "title": "Job Change",
+        "map": "payon",
+        "x": 255,
+        "y": 233,
+        "description": "Talk with <span class='npc'>[Wandering Bard]</span> in Payon city.<br><span class='hint'>He will need 30 <span class='item'>[Logs]</span> and a random amount of zeny. (Might be between 25k-100k)</span>"
+    },
+    {
+        "title": "Bard (1/8)",
+        "map": "payon",
+        "x": 440,
+        "y": 368,
+        "description": "Use the portal at the bottom right of Payon."
+    },
+    {
+        "title": "Bard (1/8)",
+        "map": "pay_fild08",
+        "description": "Kill <span class='monster'>[Willow]</span> and collect 30 <span class='item'>[Trunk]</span>.<br><span class='hint'>The quest say Logs but it's <span class='item'>[Trunk]</span>.</span>"
+    },
+    {
+        "title": "Bard (1/8)",
+        "map": "pay_fild08",
+        "x": -5,
+        "y": 394,
+        "description": "Go back to Payon City with the portal."
+    },
+    {
+        "title": "Bard (1/8)",
+        "map": "payon",
+        "x": 255,
+        "y": 233,
+        "description": "Talk with <span class='npc'>[Wandering Bard]</span> and give him the Trunks and zeny."
+    },
+    {
+        "title": "Bard (2/8)",
+        "map": "payon",
+        "x": 289,
+        "y": 339,
+        "description": "Talk to <span class='npc'>[Kafra]</span> and choose warp to Zero."
+    },
+    {
+        "title": "Bard (2/8)",
+        "map": "zero",
+        "x": 219,
+        "y": 288,
+        "description": "Talk to <span class='npc'>[Kafra]</span> and choose warp to Geffen."
+    },
+    {
+        "title": "Bard (2/8)",
+        "map": "geffen",
+        "x": 41,
+        "y": 235,
+        "description": "Use the portal on the left side of Geffen City."
+    },
+    {
+        "title": "Bard (3/8)",
+        "map": "gef_fild07",
+        "x": 212,
+        "y": 158,
+        "description": "Talk to <span class='npc'>[Luke]</span> and he will teleport you."
+    },
+    {
+        "title": "Bard (4/8)",
+        "description": "Talk to <span class='npc'>[Ludwig Ghost]</span> on the platform number 1 and complete his challenge."
+    },
+    {
+        "title": "Bard (5/8)",
+        "description": "Talk to <span class='npc'>[Fryderyk Ghost]</span> on the platform number 2 and complete his challenge."
+    },
+    {
+        "title": "Bard (6/8)",
+        "description": "Talk to <span class='npc'>[Wolfgang's Ghost]</span> on the platform number 3 and complete his challenge."
+    },
+    {
+        "title": "Bard (7/8)",
+        "description": "Talk to <span class='npc'>[Theresia's Ghost]</span> on the platform number 4 and complete her challenge."
+    },
+    {
+        "title": "Bard (8/8)",
+        "description": "Talk to <span class='npc'>[Luke]</span>. You are now a Bard!"
+    },
+]
+
+var dancer_quest = [
+    {
+        "title": "Job Change",
+        "map": "comodo",
+        "x": 247,
+        "y": 272,
+        "description": "Talk with <span class='npc'>[Headhunter]</span> in Comodo."
+    },
+    {
+        "title": "Dancer (1/5)",
+        "description": "Walk up and talk to <span class='npc'>[Headhunter]</span>."
+    },
+    {
+        "title": "Dancer (2/5)",
+        "description": "Talk to <span class='npc'>[Headhunter]</span> again to start the dancing."
+    },
+    {
+        "title": "Dancer (3/5)",
+        "description": "Talk to <span class='npc'>[Headhunter]</span> after you complete the dancing."
+    },
+    {
+        "title": "Dancer (4/5)",
+        "description": "Talk to <span class='npc'>[Headhunter]</span> again to start the second dance."
+    },
+    {
+        "title": "Dancer (5/5)",
+        "description": "Talk to <span class='npc'>[Headhunter]</span>. You are now a Dancer!"
+    },
+]
+
+var crusader_quest = [
+    {
+        "title": "Job Change",
+        "map": "zero",
+        "x": 238,
+        "y": -5,
+        "description": "Walk to the portal at the top of the map in Zero city."
+    },
+    {
+        "title": "Job Change",
+        "map": "zero_field",
+        "x": 365,
+        "y": 105,
+        "description": "Walk to the church at the top right of Zero Florest."
+    },
+    {
+        "title": "Job Change",
+        "description": "Walk straight up and talk with <span class='npc'>[Crusader]</span> on the right side."
+    },
+    {
+        "title": "Job Change",
+        "description": "Talk with <span class='npc'>[Crusader Leader River]</span> inside the room."
+    },
+    {
+        "title": "Crusader (1/4)",
+        "description": "Talk with <span class='npc'>[Crusader Leader River]</span> again while having ability <span class='skill'>[Blessing]</span> on you.<br><span class='hint'>You will need another player with the class Acolyte (Novice), Priest or Monk to use the <span class='skill'>[Blessing]</span> skill on you.</span>"
+    },
+    {
+        "title": "Crusader (2/4)",
+        "description": "Exit the room, and exit the chruch."
+    },
+    {
+        "title": "Crusader (2/4)",
+        "map": "zero_field",
+        "x": 236,
+        "y": 466,
+        "description": "After exiting the church, head toward the Zero city at the bottom of the Zero Florest map."
+    },
+    {
+        "title": "Crusader (2/4)",
+        "map": "zero",
+        "x": 219,
+        "y": 288,
+        "description": "Talk to <span class='npc'>[Kafra]</span> and choose warp to Payon."
+    },
+    {
+        "title": "Crusader (2/4)",
+        "map": "payon",
+        "x": 201,
+        "y": 154,
+        "description": "Talk to <span class='npc'>[Crusader Vanittas]</span> and take the test/quiz.<br><span class='hint'>The correct answers are: <br>1: Sacred<br>2: 1119<br>3: Conde de St. Germain<br>4: Become Zombies<br>5: Iron<br>6: Sky<br>7: Caliburn<br>8: Dog<br>9: Holy Grail<br>10: Sir<br><br>The NPC will say 'You made 0 out of a total of 10 questions', this is just a visual bug.</span>"
+    },
+    {
+        "title": "Crusader (3/4)",
+        "map": "payon",
+        "x": 289,
+        "y": 339,
+        "description": "Talk to <span class='npc'>[Kafra]</span> and choose warp to Zero."
+    },
+    {
+        "title": "Crusader (3/4)",
+        "map": "zero",
+        "x": 238,
+        "y": -5,
+        "description": "Walk to the portal at the top of the map in Zero city."
+    },
+    {
+        "title": "Crusader (3/4)",
+        "map": "zero_field",
+        "x": 365,
+        "y": 105,
+        "description": "Walk to the church at the top right of Zero Florest."
+    },
+    {
+        "title": "Crusader (3/4)",
+        "description": "Walk straight up and talk with <span class='npc'>[Crusader]</span> on the right side."
+    },
+    {
+        "title": "Crusader (3/4)",
+        "description": "Talk with <span class='npc'>[Crusader Leader River]</span> and give him the password.<br><span class='hint'>The password is: <b>Non nobis Domine, non nobis, sed nomini tuo ad gloriam</b><br>This seems to be latin for 'Not for us, Lord, not for us, but for the glory of your name'</span>"
+    },
+    {
+        "title": "Crusader (4/4)",
+        "description": "Talk with <span class='npc'>[Crusader Leader River]</span> while having a <span class='item'>[Holy Water]</span> in your inventory. You are now a Crusader!<br><span class='hint'><span class='item'>[Holy Water]</span> is created by the Acolyte class.</span>"
+    },
+]
