@@ -191,7 +191,7 @@ html, body{
     display: block;
 }
 
-#blacksmith-mining-wrapper, #boss-timer-wrapper{
+#blacksmith-mining-wrapper, #boss-timer-wrapper, #general-wrapper{
     display: none;
     margin-top: 50px;
     position: relative;
@@ -201,7 +201,7 @@ html, body{
     margin: 0px auto;
 }
 
-#blacksmith-intro-wrapper, #blacksmith-refinement-wrapper, #blacksmith-weapon-crafting-wrapper{
+#blacksmith-intro-wrapper, #blacksmith-refinement-wrapper, #blacksmith-weapon-crafting-wrapper, #general-intro-wrapper{
     margin: 0px auto;
     width: 512px;
     padding: 8px;
@@ -393,7 +393,7 @@ html, body{
     background-color: #ff6a3d;
 }
 
-.crafting-wrapper{
+.crafting-wrapper, .buff-wrapper{
     border: 1px solid #FFF;
     padding-top: 10px;
     margin-bottom: 40px;
@@ -403,6 +403,10 @@ html, body{
     display: flex;
     align-items: center;
     margin: 30px;
+}
+
+.skill-info p{
+    width: 100%;
 }
 
 .mini-icon{
